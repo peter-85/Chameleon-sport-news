@@ -11,6 +11,11 @@
     "author": "",
     "license": "ISC",
     "dependencies": {
-        "express": "^4.15.4"
+        "@types/body-parser": "^1.16.5",
+        "@types/lowdb": "^0.15.0",
+        "body-parser": "^1.18.2",
+        "express": "^4.15.4",
+        "lowdb": "^1.0.0",
+        "underscore-db": "^0.12.2"
     }
 }

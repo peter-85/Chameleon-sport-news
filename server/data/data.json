@@ -1,0 +1,229 @@
+{
+    "news": {
+        "tennisNews": [{
+                "id": 1,
+                "title": "Federer won 19th GS title at Wimbledon 2017",
+                "summary": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, laboriosam laborum exercitationem! Natus voluptatum vel labore, assumenda! Molestias nisi voluptatum ipsam assumenda ut explicabo, debitis",
+                "fullText": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, laboriosam laborum exercitationem! Natus voluptatum vel labore, assumenda! Molestias nisi voluptatum ipsam assumenda ut explicabo, debitis porro aut odit corrupti, odio fuga est sequi dolor optio corporis quasi enim voluptates modi necessitatibus? Ullam eligendi recusandae facere voluptatibus dicta unde deleniti sit, doloremque architecto? Sed error deserunt ut magnam sapiente dolore provident voluptates iusto ipsa, qui eveniet facilis asperiores repellendus neque fuga? Sint repellendus rem delectus. Illo molestiae magnam eveniet consequatur ratione! Reiciendis ducimus magni ullam necessitatibus voluptates rerum dolore esse placeat corrupti ad, minus illo soluta, iure ipsam fugiat amet aut. ",
+                "createdAt": "2016-12-31T11:31:13.840Z",
+                "image": "images/orchid1.jpg"
+            },
+            {
+                "id": 2,
+                "title": "Federer won 19th GS title at Wimbledon 2017",
+                "summary": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, laboriosam laborum exercitationem! Natus voluptatum vel labore, assumenda! Molestias nisi voluptatum ipsam assumenda ut explicabo, debitis",
+                "fullText": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, laboriosam laborum exercitationem! Natus voluptatum vel labore, assumenda! Molestias nisi voluptatum ipsam assumenda ut explicabo, debitis porro aut odit corrupti, odio fuga est sequi dolor optio corporis quasi enim voluptates modi necessitatibus? Ullam eligendi recusandae facere voluptatibus dicta unde deleniti sit, doloremque architecto? Sed error deserunt ut magnam sapiente dolore provident voluptates iusto ipsa, qui eveniet facilis asperiores repellendus neque fuga? Sint repellendus rem delectus. Illo molestiae magnam eveniet consequatur ratione! Reiciendis ducimus magni ullam necessitatibus voluptates rerum dolore esse placeat corrupti ad, minus illo soluta, iure ipsam fugiat amet aut. ",
+                "createdAt": "2016-12-31T11:31:13.840Z",
+                "image": "images/orchid1.jpg"
+            }
+        ],
+        "boxes": [{
+                "id": 19,
+                "name": "Romance in a box",
+                "createdAt": "2016-12-31T11:31:13.840Z",
+                "imgs": [
+                    "images/boxes1.jpg",
+                    "images/boxes2.jpg"
+                ],
+                "price": 35,
+                "category": "boxes",
+                "rating": 4,
+                "summary": "Heart shaped box with red roses.",
+                "orders": 0
+            },
+            {
+                "id": 20,
+                "name": "Red roses box",
+                "createdAt": "2016-12-31T11:31:13.840Z",
+                "imgs": [
+                    "images/boxes3.jpg",
+                    "images/boxes4.jpg"
+                ],
+                "price": 28,
+                "category": "boxes",
+                "rating": 4,
+                "summary": "Delicate box filled with red roses and white chrisanthemum.",
+                "orders": 4
+            },
+            {
+                "id": 21,
+                "name": "Anniversery box",
+                "createdAt": "2017-02-16T11:31:13.840Z",
+                "imgs": [
+                    "images/boxes5.jpg",
+                    "images/boxes6.jpg",
+                    "images/boxes7.jpg"
+                ],
+                "price": 15,
+                "category": "boxes",
+                "rating": 5,
+                "summary": "Vintage box filled with chrisanthemum and tulipes.",
+                "orders": 7
+            }
+        ],
+        "plants": [{
+                "id": 22,
+                "name": "Aphelandra",
+                "createdAt": "2016-12-31T11:31:13.840Z",
+                "imgs": [
+                    "images/plants1.jpg",
+                    "images/plants2.jpg",
+                    "images/plants3.jpg"
+                ],
+                "price": 10,
+                "category": "plants",
+                "rating": 3,
+                "summary": "Aphelandra decrated in gift bag.",
+                "orders": 4
+            },
+            {
+                "id": 23,
+                "name": "Gerbera",
+                "createdAt": "2016-12-31T11:31:13.840Z",
+                "imgs": [
+                    "images/plants4.jpg",
+                    "images/plants6.jpg",
+                    "images/plants5.jpg"
+                ],
+                "price": 8,
+                "category": "plants",
+                "rating": 3,
+                "summary": "Gerbera in ceramic pot.",
+                "orders": 5
+            },
+            {
+                "id": 24,
+                "name": "Guzmania",
+                "createdAt": "2016-12-31T11:31:13.840Z",
+                "imgs": [
+                    "images/plants8.jpg",
+                    "images/plants9.jpg",
+                    "images/plants7.jpg"
+                ],
+                "price": 19,
+                "category": "plants",
+                "rating": 5,
+                "summary": "Guzmania aranged in fabric pot.",
+                "orders": 6
+            },
+            {
+                "id": 25,
+                "name": "Rose",
+                "createdAt": "2016-12-31T11:31:13.840Z",
+                "imgs": [
+                    "images/plants10.jpg",
+                    "images/plants11.jpg",
+                    "images/plants12.jpg"
+                ],
+                "price": 6,
+                "category": "plants",
+                "rating": 5,
+                "summary": "Rose aranged in gift bag.",
+                "orders": 2
+            },
+            {
+                "id": 26,
+                "name": "Stephanotis floribunda",
+                "createdAt": "2017-01-31T11:31:13.840Z",
+                "imgs": [
+                    "/images/plants13.jpg",
+                    "images/plants14.jpg",
+                    "images/plants15.jpg"
+                ],
+                "price": 17,
+                "category": "plants",
+                "rating": 5,
+                "summary": "Stephanotis floribunda aranged in a gift bag.",
+                "orders": 3
+            }
+        ],
+        "chocolates": [{
+                "id": 27,
+                "name": "Cinnamon sweetnes",
+                "createdAt": "2016-12-31T11:31:13.840Z",
+                "imgs": [
+                    "images/chocolates1.jpg",
+                    "images/chocolates2.jpg"
+                ],
+                "price": 20,
+                "category": "chocolates",
+                "rating": 5,
+                "summary": "Bouquet with chocolates in gold and decorated with cinnamon sticks.",
+                "orders": 4
+            },
+            {
+                "id": 28,
+                "name": "tasty pink",
+                "createdAt": "2016-12-31T11:31:13.840Z",
+                "imgs": [
+                    "images/chocolates3.jpg",
+                    "images/chocolates4.jpg"
+                ],
+                "price": 13,
+                "category": "chocolates",
+                "rating": 3,
+                "summary": "Bouquet with chocolates in pink and purple.",
+                "orders": 0
+            },
+            {
+                "id": 29,
+                "name": "Romantic sweetnes",
+                "createdAt": "2017-02-01T11:31:13.840Z",
+                "imgs": [
+                    "images/chocolates11.jpg",
+                    "images/chocolates12.jpg"
+                ],
+                "price": 35,
+                "category": "chocolates",
+                "rating": 5,
+                "summary": "Vintage wooden box filled with chocolates and bottle of red wine.",
+                "orders": 7
+            }
+        ]
+    },
+    "users": [{
+            "username": "polia",
+            "passHash": "123456",
+            "usernameToLower": "polia",
+            "id": 1
+        },
+        {
+            "username": "dgdfg",
+            "passHash": "1234",
+            "usernameToLower": "dgdfg",
+            "id": 1
+        }
+    ],
+    "cart": [{
+            "id": 9,
+            "name": "Orchid beauty",
+            "createdAt": "2016-12-31T11:31:13.840Z",
+            "imgs": [
+                "images/orchid1.jpg",
+                "images/orchid2.jpg",
+                "images/orchid3.jpg",
+                "images/orchid4.jpg"
+            ],
+            "price": 30,
+            "category": "orchids",
+            "rating": 4,
+            "summary": "Elegant bouquet with pink orchids.",
+            "orders": 4
+        },
+        {
+            "id": 10,
+            "name": "Aphelandra",
+            "createdAt": "2016-12-31T11:31:13.840Z",
+            "imgs": [
+                "images/plants1.jpg",
+                "images/plants2.jpg",
+                "images/plants3.jpg"
+            ],
+            "price": 10,
+            "category": "plants",
+            "rating": 3,
+            "summary": "Aphelandra decrated in gift bag.",
+            "orders": 4
+        }
+    ]
+}
