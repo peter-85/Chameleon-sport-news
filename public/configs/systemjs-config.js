@@ -13,14 +13,16 @@ SystemJS.config({
 
 
         'htmlHandler': './scripts/helpers/html-handler.js',
-        // 'templateHandler': './js/helpers/template-handler.js',
+        'requester': './scripts/helpers/requester.js',
+        'templateHandler': './scripts/helpers/template-handler.js',
+        'dataService': './scripts/data/data-service.js',
 
-
-        // 'headerController': './js/controllers/header-controller.js',
-        // 'accountController': '././js/controllers/account-controller.js',
-        // 'footerController': './js/controllers/footer-controller.js',
-        // 'chartProvider': './js/helpers/chart-provider.js',
-        // 'time': './js/helpers/date-provider.js',
+        'newsController': './scripts/controllers/news-controller.js'
+            // 'headerController': './js/controllers/header-controller.js',
+            // 'accountController': '././js/controllers/account-controller.js',
+            // 'footerController': './js/controllers/footer-controller.js',
+            // 'chartProvider': './js/helpers/chart-provider.js',
+            // 'time': './js/helpers/date-provider.js',
 
         // 'handlebars': 'https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.min.js',
 

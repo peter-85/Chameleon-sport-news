@@ -1,0 +1,19 @@
+<div class="tab-content">
+        <div class="container">
+            {{#each result}}
+            <div class="col-sm-12 blogShort">
+                <h3 id="news-title">{{title}}</h3>
+                <em>Author:{{summary}}</em>
+                <article>
+                    <p>
+                        {{fullText}}
+                        <div class="fb-share-button pull-right" data-href="{{url}}" data-layout="button_count" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="">Share</a></div>
+                    </p>
+                </article>
+            </div>
+            {{/each}}
+            <p align="right"><em>powered by NewsAPI.org</em></p>
+
+        </div>
+    </div>
+</div>

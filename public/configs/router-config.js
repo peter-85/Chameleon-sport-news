@@ -1,7 +1,7 @@
 import { htmlHandler } from 'htmlHandler';
 // import { footerController } from 'footerController';
 // import { headerController } from 'headerController';
-// import { accountController } from 'accountController';
+import { newsController } from 'newsController';
 
 class Router {
 
@@ -15,7 +15,7 @@ class Router {
             this.get('#/home', () => htmlHandler.setHtml('home', '#content'));
 
             //Account
-            // this.get('#/account/sign-in', accountController.loadSignInPage);
+            this.get('#/tennisNews', newsController.getTennisNews);
             // this.get('#/account/sign-up', accountController.loadSignUpPage);
 
             // this.post('#/account/sign-in', accountController.signIn);
