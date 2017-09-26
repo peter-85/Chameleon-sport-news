@@ -20,7 +20,7 @@ app.get('/', (req, res) => {
 });
 
 
-let newsController = require("../controllers/news-controller")(db);
+let newsController = require("./controllers/news-controller")(db);
 
 app.get("/api/news", newsController.getNews);
 app.get("/api/news/tennisnews", newsController.getTennisNews);
