@@ -6,17 +6,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sport news</title>
+    <link rel="stylesheet" href="./temp/styles/styles.css">
+
 </head>
 
 <body>
-    <h1>Sport news Petar</h1>
-    <h2>Adding and deploying to Heroku</h2>
+    <div class="preloading-icon"></div>
 
-    <main class="container">
-        <div id="content">
+    <div class="main-window">
+        <nav>
+            <header class="site-header">
+                <a class="site-header__logo" href="/">
+                    <img src="./images/logo.png" class="site-header__logo-img">
+                    <span class="site-header__logo-text">Chameleon</span>
+                    <span class="site-header__logo-slogan">Follow sport news</span>
+                </a>
 
-        </div>
-    </main>
+                <div class="site-header__panel">
+                    <div class="site-header__social-icons">
+                        <a href="#"><img alt="Twitter" src="./images/twitter.png"></a>
+                        <a href="#"><img alt="Rss" src="./images/rss.png"></a>
+                        <a href="#"><img alt="Facebook" class="last-img" src="./images/facebook.png"></a>
+                    </div>
+
+                    <!--<div class="site-header__search">-->
+                    <form class="site-header__search" method="get">
+                        <input class="site-header__search-input" name="s" type="text" placeholder="Search this website...">
+                        <input class="site-header__search-btn" src="./images/search_btn.png" type="image">
+                    </form>
+                    <!--</div>-->
+                </div>
+                <nav>
+                    <ul class="site-header__nav">
+                        <li><a href="#" class="first-el">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Page Templates</a></li>
+                        <li><a href="#">Shortcodes</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </nav>
+
+            </header>
+        </nav>
+
+        <main class="container">
+            <div id="content">
+
+            </div>
+        </main>
+
+
+        <footer class="site-footer">
+            <div class="site-footer__column">
+                <a class="site-footer__logo" href="/">
+                    <img src="./images/logo.png" class="site-footer__logo-img">
+                    <span class="site-footer__logo-text">Chameleon</span>
+                    <span class="site-footer__slogan-text">Travel the World Now</span>
+                </a>
+
+                <span>&copy; Chameleon Theme 2010</span>
+                <div class="line-height--large">The Peruvian population, estimated at 31.2 million in 2015,[10] is multiethnic, including Amerindians, Europeans, Africans and Asians. The main spoken language is Spanish, although a significant number of Peruvians speak Quechua or other
+                    native languages. This mixture of cultural traditions has resulted in a wide diversity of expressions in fields such as art, cuisine, literature, and music.</div>
+            </div>
+            <div class="site-footer__column site-footer__list">
+                <span>Recent Posts</span>
+
+                <li>How to get to Machu Picchu</li>
+                <li>Handling the heights </li>
+                <li>Chewing CoCa leaves</li>
+                <li>Lots of money to spend here</li>
+                <li>Leave worries home </li>
+                <li>And always return to PEru</li>
+
+            </div>
+            <div class="site-footer__column">
+                <span>Petar</span> The Peruvian population, estimated at 31.2 million in 2015,[10] is multiethnic, including Amerindians, Europeans, Africans and Asians. The main spoken language is Spanish, although a significant number of Peruvians speak
+                Quechua or other native languages. This mixture of cultural traditions has resulted in a wide diversity of expressions in fields such as art, cuisine, literature, and music.
+            </div>
+            <div class="site-footer__column site-footer__list">
+                <span>Recent Comments</span>
+
+                <li>Sun-Cream and glassessssssss</li>
+                <li>A lot of energy drinks and good </li>
+                <li>Positive vibe and no girl-friends</li>
+                <li>Lots of money to spend here</li>
+                <li>Leave worries home </li>
+                <li>And always return to PEru</li>
+
+            </div>
+            <div class="site-footer__bottom">
+                <p>Designed by <span class="bottom-footer-dark">ElegantWordPressThemes</span> | Powered by <span class="bottom-footer-dark">WordPress</span></p>
+            </div>
+        </footer>
+
+
+
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.20.12/system.js"></script>
@@ -25,6 +111,7 @@
     <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
     <script>
         System.import('main');
     </script>

@@ -1,10 +1,10 @@
-const gulp = require('gulp'),
-    watch = require('gulp-watch');
+const gulp = require('gulp');
+const watch = require('gulp-watch');
 
 
 gulp.task('watch', function() {
 
-    watch('./styles/**/*.css', () => {
+    watch('./styles/**/*', () => {
         gulp.start('styles');
     });
 

@@ -1,0 +1,76 @@
+.site-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 36px;
+    background-color: rgb(249, 249, 249);
+    border: 1px solid rgb(255, 255, 255);
+    &__column {
+        flex-basis: 190px;
+        font-family: 'Droid-Sans';
+        font-size: 12px;
+        color: rgb(160, 160, 160);
+        &>span {
+            font-family: 'Kreon-Light';
+            font-size: 20px;
+            color: rgb(29, 29, 29);
+            display: block;
+            margin-bottom: 20px;
+        }
+        &:first-child>span {
+            font-family: Kreon;
+            font-size: 12px;
+            margin-top: 8px;
+            margin-bottom: 8px;
+            color: rgb(131, 131, 131);
+            display: block;
+        }
+    }
+    &__logo {
+        display: inline-block;
+    }
+    &__logo-img {
+        zoom: 70%;
+        float: left;
+    }
+    &__logo-text {
+        float: left;
+        padding-left: 3px;
+        font-family: 'Kreon-Light';
+        font-size: 20.22px;
+        color: rgb(17, 17, 17);
+        text-transform: uppercase;
+    }
+    &__slogan-text {
+        float: left;
+        font-family: 'Droid-Sans';
+        font-size: 9px;
+        text-transform: uppercase;
+        color: rgb(102, 146, 156);
+        font-weight: 600;
+        padding-left: 5px;
+    }
+    &__list {
+        display: flex;
+        flex-direction: column;
+        li {
+            list-style-type: disc;
+            padding-right: 0px;
+            margin-top: 0px;
+            margin-left: 0px;
+            margin-bottom: 16px
+        }
+        li:last-child {
+            margin-bottom: 0px;
+        }
+    }
+    &__bottom {
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        margin-right: 10px;
+        font-family: 'Kreon-Light';
+        font-size: 12px;
+        color: rgb(205, 205, 205);
+    }
+}

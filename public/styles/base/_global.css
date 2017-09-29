@@ -1,0 +1,80 @@
+/*start Preloading spinner*/
+
+.no-js #loader {
+    display: none;
+}
+
+.js #loader {
+    display: block;
+    position: absolute;
+    left: 100px;
+    top: 0;
+}
+
+.preloading-icon {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url("../../images/Preloader_8.gif") center no-repeat #fff;
+}
+
+
+/*end Preloading spinner*/
+
+@font-face {
+    font-family: BlackJackReg;
+    src: url("../../fonts/BLACKJAR.TTF") format("truetype");
+}
+
+@font-face {
+    font-family: Kreon;
+    src: url("../../fonts/Kreon-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: Kreon-Light;
+    src: url("../../fonts/Kreon-Light.ttf") format("truetype");
+}
+
+
+/* General element settings */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    border: 1px solid purple;
+    background-image: url('../../images/background.png')
+}
+
+.main-window {
+    width: 960px;
+    margin: auto;
+    border-top: 1px solid rgb(255, 255, 255);
+    margin-top: 50px;
+    margin-bottom: 100px;
+    background-color: white;
+}
+
+ul,
+li {
+    list-style-type: none;
+}
+
+a {
+    color: rgb(57, 57, 57);
+}
+
+a:link {
+    text-decoration: none;
+    text-decoration-color: none;
+}
+
+.line-height--large {
+    line-height: 165%;
+}
