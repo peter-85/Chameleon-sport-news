@@ -1,8 +1,8 @@
 .site-footer {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    padding-top: 36px;
+    justify-content: space-between;
+    padding: 36px 50px 0 50px;
     background-color: rgb(249, 249, 249);
     border: 1px solid rgb(255, 255, 255);
     &__column {

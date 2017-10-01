@@ -96,22 +96,22 @@
                 {{/recentPosts.result}}
             </ul>
         </aside>
-        <aside class="home-aside">
-            <h4 class="related-links-title">Multi-Media Bar</h4>
-            <div id="multi-media-bar" class="group">
+        <aside class="media">
+            <h4 class="media__title">Multi-Media Bar</h4>
+            <div class="media__bar">
                 {{#media.result}}
-                <div class="img-container media-img-container">
-                    <img src="{{imageUrl}}" alt="{{description}}" class="post-img media-img">
-                    <span class="media-hover-icon"></span>
-                    <div class="media-description">
+                <div class="media__img-container">
+                    <img src="{{imageUrl}}" alt="{{description}}" class="media__img">
+                    <span class="media__hover-icon"></span>
+                    <div class="media__description">
                         <p>{{description}}</p>
-                        <span class="media-arrow"></span>
+                        <span class="media__arrow"></span>
                     </div>
                 </div>
                 {{/media.result}}
-                <ul class="media-nav">
-                    <li><a href="#" class="media-prev">Prev</a></li>
-                    <li><a href="#" class="media-next">Next</a></li>
+                <ul class="media__nav">
+                    <li><a href="#" class="media__prev">Prev</a></li>
+                    <li><a href="#" class="media__next">Next</a></li>
                 </ul>
             </div>
         </aside>
