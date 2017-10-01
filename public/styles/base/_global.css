@@ -30,6 +30,11 @@
 }
 
 @font-face {
+    font-family: Droid-Sans;
+    src: url("../../fonts/DroidSans.ttf") format("truetype");
+}
+
+@font-face {
     font-family: Kreon;
     src: url("../../fonts/Kreon-Regular.ttf") format("truetype");
 }
@@ -76,5 +81,5 @@ a:link {
 }
 
 .line-height--large {
-    line-height: 165%;
+    line-height: 170%;
 }

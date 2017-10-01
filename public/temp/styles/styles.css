@@ -481,6 +481,11 @@ template {
 }
 
 @font-face {
+    font-family: Droid-Sans;
+    src: url("../../fonts/DroidSans.ttf") format("truetype");
+}
+
+@font-face {
     font-family: Kreon;
     src: url("../../fonts/Kreon-Regular.ttf") format("truetype");
 }
@@ -528,7 +533,7 @@ a:link {
 }
 
 .line-height--large {
-    line-height: 165%;
+    line-height: 170%;
 }
 
 .site-header {
@@ -576,7 +581,8 @@ a:link {
         font-weight: bold;
         color: rgb(67, 125, 139);
         position: relative;
-        top: -6px;
+        top: 31px;
+        left: 10px;
     }
 
 .site-header__nav {
@@ -762,8 +768,384 @@ a:link {
                 flex-direction: row-reverse;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
-        margin-right: 10px;
+        margin-right: 25px;
         font-family: 'Kreon-Light';
         font-size: 12px;
         color: rgb(205, 205, 205);
+        padding-top: 35px;
+    }
+
+.site-footer__bottom--dark {
+            color: rgb(146, 146, 146);
+        }
+
+.secondary-header {
+    height: 56px;
+    background-image: linear-gradient(-45deg, rgb(245, 245, 245) 25%, transparent 25%, transparent 50%, rgb(245, 245, 245) 50%, rgb(245, 245, 245) 75%, transparent 75%, transparent);
+    background-size: 8px 8px;
+    border-top: 1px solid transparent;
+    -o-border-image: radial-gradient(circle, rgb(203, 203, 203) 40%, rgb(220, 220, 220) 80%, rgb(232, 232, 232) 20%);
+       border-image: radial-gradient(circle, rgb(203, 203, 203) 40%, rgb(220, 220, 220) 80%, rgb(232, 232, 232) 20%);
+    border-image-slice: 1;
+    -webkit-box-shadow: inset 0 7px 6px -6px rgb(225, 225, 225);
+            box-shadow: inset 0 7px 6px -6px rgb(225, 225, 225);
+    padding-left: 23px;
+    padding-top: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.secondary-header__nav {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+    }
+
+.secondary-header__nav li {
+            font-family: 'Kreon-Light';
+            font-size: 15px;
+            text-transform: uppercase;
+            margin-right: 21px;
+        }
+
+.secondary-header__nav .first-el {
+            color: rgb(67, 125, 139);
+            font-weight: 600;
+        }
+
+.carousel {
+    max-width: 960px;
+    max-height: 332px;
+}
+
+.carousel-img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 960px;
+    max-height: 332px;
+    border: 1px solid rgb(240, 240, 240);
+    -webkit-box-shadow: 1px 4px 6px 1px rgba(0, 0, 0, 0.08);
+            box-shadow: 1px 4px 6px 1px rgba(0, 0, 0, 0.08);
+}
+
+/* Carousel navigation arrows and bottom points*/
+
+.right span {
+    float: right;
+    padding-top: 100%;
+}
+
+.carousel-right-arrow {
+    margin-right: -8px;
+    cursor: pointer;
+}
+
+.left span {
+    float: left;
+    padding-top: 100%;
+    color: white;
+}
+
+.carousel-left-arrow {
+    margin-left: -8px;
+    cursor: pointer;
+}
+
+/* Carousel  bottom points*/
+
+.carousel-indicators {
+    bottom: -15%
+}
+
+.carousel-indicators li {
+    border: none;
+    border-radius: 50%;
+    background-color: rgb(223, 223, 223);
+}
+
+.carousel-indicators .active {
+    border-radius: 50%;
+    border: 2.5px solid rgb(223, 223, 223);
+    background-color: rgb(30, 30, 30)
+}
+
+/* Carousel main window caption */
+
+.carousel-caption {
+    right: 5%;
+    padding-top: 36px;
+    padding-right: 30px;
+    padding-left: 32px;
+    margin-bottom: 25px;
+    left: auto;
+    width: 413px;
+    height: 235px;
+    background-color: rgba(0, 0, 0, 0.59);
+    text-align: left;
+}
+
+.carousel-caption h2 {
+    font-family: 'Kreon-Light';
+    font-size: 28px;
+    font-weight: 100;
+    margin-top: 0;
+    color: rgb(255, 255, 255)
+}
+
+.carousel-caption p {
+    font-family: 'Droid-Sans';
+    line-height: 170%;
+    font-size: 12px;
+    color: rgb(178, 168, 163);
+}
+
+.carousel-caption-btn {
+    float: right;
+    background-color: rgba(14, 13, 1, 0.3);
+    font-family: Kreon;
+    font-size: 13px;
+    color: rgb(123, 146, 151);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.main-jumbotron__section {
+    background-color: rgb(255, 255, 255);
+    max-height: 130px;
+    padding-top: 0px;
+    margin-top: 55px;
+    margin-bottom: 5px;
+    text-align: center;
+    vertical-align: center
+}
+
+.main-jumbotron__section h2 {
+    font-family: 'Kreon-Light';
+    font-weight: 500;
+    position: relative;
+    top: -10px
+}
+
+.main-jumbotron__section p {
+    font-family: 'Kreon-Light';
+    font-weight: 500;
+    color: rgb(175, 175, 175);
+    position: relative;
+    top: -15px;
+}
+
+.section-separator {
+    width: 890px;
+    margin-bottom: 0px;
+}
+
+.blog-media {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0 50px;
+}
+
+.blog-p {
+    width: 240px;
+    margin-right: 70px;
+}
+
+.blog-p__posts {
+        font-size: 12px;
+        font-family: "Droid-Sans";
+        padding: 0px 5px 10px 10px;
+    }
+
+.blog-p__posts li {
+            list-style-type: disc;
+            line-height: 200%;
+            color: rgb(175, 175, 175);
+        }
+
+.blog-p__posts li a {
+                color: rgb(175, 175, 175);
+            }
+
+.blog-p__title {
+        font-family: "Kreon-Light";
+    }
+
+.related-links-title {
+    font-family: 'Kreon-Light';
+}
+
+.home-aside-list {
+    width: 550px;
+}
+
+#multi-media-bar {
+    position: absolute;
+    border-radius: 0.25em;
+    padding: 1.08em 1.17em 1.25em 2.33em;
+}
+
+#multi-media-bar,
+.media-img-container {
+    // -moz-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    // -webkit-box-shadow: 1px 11px 3px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+            box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    border: 1px solid #f0f0f0;
+    border-right-color: #d1d1d1;
+    border-bottom-color: #d1d1d1;
+}
+
+.media-img-container {
+    position: relative;
+    float: left;
+    margin-right: 1.42em;
+    padding: 0.25em;
+    width: 4.5em;
+    height: 4.5em;
+}
+
+.media-img-container:hover .media-img {
+    opacity: 0.75;
+}
+
+.media-img-container:hover .media-hover-icon {
+    visibility: visible;
+}
+
+.media-img-container:hover .media-description {
+    display: block;
+}
+
+.media-hover-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: inline-block;
+    margin: -1.37em 0 0 -1.37em;
+    width: 2.75em;
+    height: 2.75em;
+    background: url("images/media-hover-icon.png");
+    visibility: hidden;
+}
+
+.media-hover-video-icon {
+    background: url("images/media-hover-video-icon.png");
+}
+
+.media-description {
+    display: none;
+    position: absolute;
+    bottom: 5.25em;
+    left: -4.83em;
+    width: 11.67em;
+    padding: 1.25em 1.25em 0.67em;
+    z-index: 99;
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    border-bottom: 1px solid #d1d1d1;
+    border-radius: 0.83em;
+    -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    font-family: Georgia, serif;
+    color: #929292;
+    font-style: italic;
+}
+
+.media-arrow {
+    display: block;
+    position: absolute;
+    width: 1.17em;
+    height: 0.67em;
+    bottom: -0.67em;
+    left: 6.67em;
+    background: url(images/media-arrow.png) no-repeat;
+}
+
+.media-nav a {
+    position: absolute;
+    top: 50%;
+    margin-top: -1.1em;
+    width: 2.25em;
+    height: 2.25em;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    background-size: cover;
+    z-index: 99;
+    pointer-events: none;
+}
+
+.media-prev {
+    left: -1em;
+    background: url("images/media-left-arrow.png");
+}
+
+.media-next {
+    right: -1em;
+    background: url("images/media-right-arrow.png");
+}
+
+/*@import "../_main-content.scss";*/
+
+.previews {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 0 50px;
+}
+
+.preview {
+    width: 240px;
+}
+
+.preview:not(:last-child) {
+        margin-right: 70px;
+    }
+
+.preview__title {
+        font-size: 20px;
+        overflow: hidden;
+        font-family: 'Kreon-Light';
+    }
+
+.preview__summary {
+        font-size: 12px;
+        font-family: 'Droid-Sans';
+        color: rgb(175, 175, 175);
+        padding: 20px 5px 35px 5px;
+        line-height: 170%;
+    }
+
+.preview__image-container {
+        width: 240px;
+        height: 125px;
+    }
+
+.preview__image-container:hover .preview__image {
+            opacity: 0.5;
+        }
+
+.preview__image-container:hover .preview__hover-icon {
+            visibility: visible;
+        }
+
+.preview__hover-icon {
+        position: relative;
+        bottom: 62px;
+        left: 50%;
+        display: inline-block;
+        margin: -1.67em 0 0 -1.67em;
+        width: 40px;
+        height: 40px;
+        background: url("images/preview-hover-icon.png");
+        visibility: hidden;
     }

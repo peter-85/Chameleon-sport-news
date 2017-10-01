@@ -2,228 +2,198 @@
     "news": {
         "tennisNews": [{
                 "id": 1,
-                "title": "Federer won 19th GS title at Wimbledon 2017",
-                "summary": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, laboriosam laborum exercitationem! Natus voluptatum vel labore, assumenda! Molestias nisi voluptatum ipsam assumenda ut explicabo, debitis",
-                "fullText": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, laboriosam laborum exercitationem! Natus voluptatum vel labore, assumenda! Molestias nisi voluptatum ipsam assumenda ut explicabo, debitis porro aut odit corrupti, odio fuga est sequi dolor optio corporis quasi enim voluptates modi necessitatibus? Ullam eligendi recusandae facere voluptatibus dicta unde deleniti sit, doloremque architecto? Sed error deserunt ut magnam sapiente dolore provident voluptates iusto ipsa, qui eveniet facilis asperiores repellendus neque fuga? Sint repellendus rem delectus. Illo molestiae magnam eveniet consequatur ratione! Reiciendis ducimus magni ullam necessitatibus voluptates rerum dolore esse placeat corrupti ad, minus illo soluta, iure ipsam fugiat amet aut. ",
+                "title": "Wimbledon 1980: Wooden Racquets, Short Shorts And The Ultimate Showdown",
+                "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboridsadasdasdasdsadass nisi ut aliquidsadadsadsadsaex ea commodo consequat ",
+
+                "fullText": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, laboriosam laborum exercitationem! Natus voluptatum vel labore, assumenda! Molestias nisi  porro aut odit corrupti, odio fuga est sequi dolor optio corporis quasi enim voluptates modi necessitatibus? Ullam eligendi recusandae facere voluptatibus dicta unde deleniti sit, doloremque architecto? Sed error deserunt ut magnam sapiente dolore provident voluptates iusto ipsa, qui eveniet facilis asperiores repellendus neque fuga? Sint repellendus rem delectus. Illo molestiae magnam eveniet consequatur ratione! Reiciendis ducimus magni ullam necessitatibus voluptates rerum dolore esse placeat corrupti ad, minus illo soluta, iure ipsam fugiat amet aut. ",
                 "createdAt": "2016-12-31T11:31:13.840Z",
-                "image": "images/orchid1.jpg"
+                "image": "images/tennis-news-1.jpg",
+                "comments": [{
+                        "name": "Petar",
+                        "email": "petraka@abv.bg",
+                        "message": "Well Nadal is better on claycourt but probably Federer is GOAT"
+                    },
+                    {
+                        "name": "Stefan",
+                        "email": "stefan@abv.bg",
+                        "message": "But Soderling is a great server and beat Nadal in RG 2009"
+                    }
+                ]
             },
             {
                 "id": 2,
                 "title": "Federer won 19th GS title at Wimbledon 2017",
-                "summary": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, laboriosam laborum exercitationem! Natus voluptatum vel labore, assumenda! Molestias nisi voluptatum ipsam assumenda ut explicabo, debitis",
-                "fullText": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, laboriosam laborum exercitationem! Natus voluptatum vel labore, assumenda! Molestias nisi voluptatum ipsam assumenda ut explicabo, debitis porro aut odit corrupti, odio fuga est sequi dolor optio corporis quasi enim voluptates modi necessitatibus? Ullam eligendi recusandae facere voluptatibus dicta unde deleniti sit, doloremque architecto? Sed error deserunt ut magnam sapiente dolore provident voluptates iusto ipsa, qui eveniet facilis asperiores repellendus neque fuga? Sint repellendus rem delectus. Illo molestiae magnam eveniet consequatur ratione! Reiciendis ducimus magni ullam necessitatibus voluptates rerum dolore esse placeat corrupti ad, minus illo soluta, iure ipsam fugiat amet aut. ",
+                "summary": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, laboriosam laborum exercitationem! Natus voluptatum vel labore, assumenda! Molestias nisi ",
+                "fullText": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, laboriosam laborum exercitationem! Natus voluptatum vel labore, assumenda! Molestias nisi  porro aut odit corrupti, odio fuga est sequi dolor optio corporis quasi enim voluptates modi necessitatibus? Ullam eligendi recusandae facere voluptatibus dicta unde deleniti sit, doloremque architecto? Sed error deserunt ut magnam sapiente dolore provident voluptates iusto ipsa, qui eveniet facilis asperiores repellendus neque fuga? Sint repellendus rem delectus. Illo molestiae magnam eveniet consequatur ratione! Reiciendis ducimus magni ullam necessitatibus voluptates rerum dolore esse placeat corrupti ad, minus illo soluta, iure ipsam fugiat amet aut. ",
                 "createdAt": "2016-12-31T11:31:13.840Z",
-                "image": "images/orchid1.jpg"
+                "image": "images/tennis-news-2.jpg",
+                "comments": [{
+                        "name": "Petar",
+                        "email": "petraka@abv.bg",
+                        "message": "Well Nadal is better on claycourt but probably Federer is GOAT"
+                    },
+                    {
+                        "name": "Stefan",
+                        "email": "stefan@abv.bg",
+                        "message": "But Soderling is a great server and beat Nadal in RG 2009"
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "title": "Federer won 19th GS title at Wimbledon 2017",
+                "summary": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, laboriosam laborum exercitationem! Natus voluptatum vel labore, assumenda! Molestias nisi ",
+                "fullText": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, laboriosam laborum exercitationem! Natus voluptatum vel labore, assumenda! Molestias nisi  porro aut odit corrupti, odio fuga est sequi dolor optio corporis quasi enim voluptates modi necessitatibus? Ullam eligendi recusandae facere voluptatibus dicta unde deleniti sit, doloremque architecto? Sed error deserunt ut magnam sapiente dolore provident voluptates iusto ipsa, qui eveniet facilis asperiores repellendus neque fuga? Sint repellendus rem delectus. Illo molestiae magnam eveniet consequatur ratione! Reiciendis ducimus magni ullam necessitatibus voluptates rerum dolore esse placeat corrupti ad, minus illo soluta, iure ipsam fugiat amet aut. ",
+                "createdAt": "2016-12-31T11:31:13.840Z",
+                "image": "images/tennis-news-3.jpg",
+                "comments": [{
+                        "name": "Petar",
+                        "email": "petraka@abv.bg",
+                        "message": "Well Nadal is better on claycourt but probably Federer is GOAT"
+                    },
+                    {
+                        "name": "Stefan",
+                        "email": "stefan@abv.bg",
+                        "message": "But Soderling is a great server and beat Nadal in RG 2009"
+                    }
+                ]
+            },
+            {
+                "id": 4,
+                "title": "Federer won 19th GS title at Wimbledon 2017",
+                "summary": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, laboriosam laborum exercitationem! Natus voluptatum vel labore, assumenda! Molestias nisi ",
+                "fullText": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, laboriosam laborum exercitationem! Natus voluptatum vel labore, assumenda! Molestias nisi  porro aut odit corrupti, odio fuga est sequi dolor optio corporis quasi enim voluptates modi necessitatibus? Ullam eligendi recusandae facere voluptatibus dicta unde deleniti sit, doloremque architecto? Sed error deserunt ut magnam sapiente dolore provident voluptates iusto ipsa, qui eveniet facilis asperiores repellendus neque fuga? Sint repellendus rem delectus. Illo molestiae magnam eveniet consequatur ratione! Reiciendis ducimus magni ullam necessitatibus voluptates rerum dolore esse placeat corrupti ad, minus illo soluta, iure ipsam fugiat amet aut. ",
+                "createdAt": "2016-12-31T11:31:13.840Z",
+                "image": "images/tennis-news-4.jpg",
+                "comments": [{
+                        "name": "Petar",
+                        "email": "petraka@abv.bg",
+                        "message": "Well Nadal is better on claycourt but probably Federer is GOAT"
+                    },
+                    {
+                        "name": "Stefan",
+                        "email": "stefan@abv.bg",
+                        "message": "But Soderling is a great server and beat Nadal in RG 2009"
+                    }
+                ]
             }
         ],
-        "boxes": [{
+        "latestSportNews": [{
                 "id": 19,
-                "name": "Romance in a box",
+                "title": "NBA Action is now on USA",
+                "summary": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, laboriosam laborum exercitationem! Natus voluptatum vel labore, assumenda! Molestias nisi ",
+                "fullText": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, laboriosam laborum exercitationem! Natus voluptatum vel labore, assumenda! Molestias nisi  porro aut odit corrupti, odio fuga est sequi dolor optio corporis quasi enim voluptates modi necessitatibus? Ullam eligendi recusandae facere voluptatibus dicta unde deleniti sit, doloremque architecto? Sed error deserunt ut magnam sapiente dolore provident voluptates iusto ipsa, qui eveniet facilis asperiores repellendus neque fuga? Sint repellendus rem delectus. Illo molestiae magnam eveniet consequatur ratione! Reiciendis ducimus magni ullam necessitatibus voluptates rerum dolore esse placeat corrupti ad, minus illo soluta, iure ipsam fugiat amet aut. ",
                 "createdAt": "2016-12-31T11:31:13.840Z",
-                "imgs": [
-                    "images/boxes1.jpg",
-                    "images/boxes2.jpg"
-                ],
-                "price": 35,
-                "category": "boxes",
-                "rating": 4,
-                "summary": "Heart shaped box with red roses.",
-                "orders": 0
+                "image": "images/latest-sport-news-1-240px.jpeg",
+                "comments": []
             },
             {
                 "id": 20,
-                "name": "Red roses box",
+                "title": "Messi won the Golden Ball",
+                "summary": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, laboriosam laborum exercitationem! Natus voluptatum vel labore, assumenda! Molestias nisi ",
+                "fullText": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, laboriosam laborum exercitationem! Natus voluptatum vel labore, assumenda! Molestias nisi  porro aut odit corrupti, odio fuga est sequi dolor optio corporis quasi enim voluptates modi necessitatibus? Ullam eligendi recusandae facere voluptatibus dicta unde deleniti sit, doloremque architecto? Sed error deserunt ut magnam sapiente dolore provident voluptates iusto ipsa, qui eveniet facilis asperiores repellendus neque fuga? Sint repellendus rem delectus. Illo molestiae magnam eveniet consequatur ratione! Reiciendis ducimus magni ullam necessitatibus voluptates rerum dolore esse placeat corrupti ad, minus illo soluta, iure ipsam fugiat amet aut. ",
                 "createdAt": "2016-12-31T11:31:13.840Z",
-                "imgs": [
-                    "images/boxes3.jpg",
-                    "images/boxes4.jpg"
-                ],
-                "price": 28,
-                "category": "boxes",
-                "rating": 4,
-                "summary": "Delicate box filled with red roses and white chrisanthemum.",
-                "orders": 4
+                "image": "images/latest-sport-news-1-240px.jpeg"
             },
             {
                 "id": 21,
-                "name": "Anniversery box",
-                "createdAt": "2017-02-16T11:31:13.840Z",
-                "imgs": [
-                    "images/boxes5.jpg",
-                    "images/boxes6.jpg",
-                    "images/boxes7.jpg"
-                ],
-                "price": 15,
-                "category": "boxes",
-                "rating": 5,
-                "summary": "Vintage box filled with chrisanthemum and tulipes.",
-                "orders": 7
+                "title": "Messi won the Golden Ball",
+                "summary": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, laboriosam laborum exercitationem! Natus voluptatum vel labore, assumenda! Molestias nisi ",
+                "fullText": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, laboriosam laborum exercitationem! Natus voluptatum vel labore, assumenda! Molestias nisi  porro aut odit corrupti, odio fuga est sequi dolor optio corporis quasi enim voluptates modi necessitatibus? Ullam eligendi recusandae facere voluptatibus dicta unde deleniti sit, doloremque architecto? Sed error deserunt ut magnam sapiente dolore provident voluptates iusto ipsa, qui eveniet facilis asperiores repellendus neque fuga? Sint repellendus rem delectus. Illo molestiae magnam eveniet consequatur ratione! Reiciendis ducimus magni ullam necessitatibus voluptates rerum dolore esse placeat corrupti ad, minus illo soluta, iure ipsam fugiat amet aut. ",
+                "createdAt": "2016-12-31T11:31:13.840Z",
+                "image": "images/latest-sport-news-1-240px.jpeg"
             }
         ],
-        "plants": [{
+        "recentPosts": [{
                 "id": 22,
-                "name": "Aphelandra",
-                "createdAt": "2016-12-31T11:31:13.840Z",
-                "imgs": [
-                    "images/plants1.jpg",
-                    "images/plants2.jpg",
-                    "images/plants3.jpg"
-                ],
-                "price": 10,
-                "category": "plants",
-                "rating": 3,
-                "summary": "Aphelandra decrated in gift bag.",
-                "orders": 4
+                "title": "Who is the best tennis player of all time?"
             },
             {
                 "id": 23,
-                "name": "Gerbera",
-                "createdAt": "2016-12-31T11:31:13.840Z",
-                "imgs": [
-                    "images/plants4.jpg",
-                    "images/plants6.jpg",
-                    "images/plants5.jpg"
-                ],
-                "price": 8,
-                "category": "plants",
-                "rating": 3,
-                "summary": "Gerbera in ceramic pot.",
-                "orders": 5
+                "title": "Why Ronaldo mess with the best?"
             },
             {
                 "id": 24,
-                "name": "Guzmania",
-                "createdAt": "2016-12-31T11:31:13.840Z",
-                "imgs": [
-                    "images/plants8.jpg",
-                    "images/plants9.jpg",
-                    "images/plants7.jpg"
-                ],
-                "price": 19,
-                "category": "plants",
-                "rating": 5,
-                "summary": "Guzmania aranged in fabric pot.",
-                "orders": 6
+                "title": "O2 Arena ready to beat all the records"
             },
             {
                 "id": 25,
-                "name": "Rose",
-                "createdAt": "2016-12-31T11:31:13.840Z",
-                "imgs": [
-                    "images/plants10.jpg",
-                    "images/plants11.jpg",
-                    "images/plants12.jpg"
-                ],
-                "price": 6,
-                "category": "plants",
-                "rating": 5,
-                "summary": "Rose aranged in gift bag.",
-                "orders": 2
+                "title": "Why Ronaldo mess with the best?"
             },
             {
                 "id": 26,
-                "name": "Stephanotis floribunda",
-                "createdAt": "2017-01-31T11:31:13.840Z",
-                "imgs": [
-                    "/images/plants13.jpg",
-                    "images/plants14.jpg",
-                    "images/plants15.jpg"
-                ],
-                "price": 17,
-                "category": "plants",
-                "rating": 5,
-                "summary": "Stephanotis floribunda aranged in a gift bag.",
-                "orders": 3
-            }
-        ],
-        "chocolates": [{
+                "title": "O2 Arena ready to beat all the records"
+            },
+            {
                 "id": 27,
-                "name": "Cinnamon sweetnes",
-                "createdAt": "2016-12-31T11:31:13.840Z",
-                "imgs": [
-                    "images/chocolates1.jpg",
-                    "images/chocolates2.jpg"
-                ],
-                "price": 20,
-                "category": "chocolates",
-                "rating": 5,
-                "summary": "Bouquet with chocolates in gold and decorated with cinnamon sticks.",
-                "orders": 4
+                "title": "Why Ronaldo mess with the best?"
             },
             {
                 "id": 28,
-                "name": "tasty pink",
-                "createdAt": "2016-12-31T11:31:13.840Z",
-                "imgs": [
-                    "images/chocolates3.jpg",
-                    "images/chocolates4.jpg"
-                ],
-                "price": 13,
-                "category": "chocolates",
-                "rating": 3,
-                "summary": "Bouquet with chocolates in pink and purple.",
-                "orders": 0
-            },
-            {
-                "id": 29,
-                "name": "Romantic sweetnes",
-                "createdAt": "2017-02-01T11:31:13.840Z",
-                "imgs": [
-                    "images/chocolates11.jpg",
-                    "images/chocolates12.jpg"
-                ],
-                "price": 35,
-                "category": "chocolates",
-                "rating": 5,
-                "summary": "Vintage wooden box filled with chocolates and bottle of red wine.",
-                "orders": 7
+                "title": "O2 Arena ready to beat all the records"
             }
         ]
     },
-    "users": [{
-            "username": "polia",
-            "passHash": "123456",
-            "usernameToLower": "polia",
-            "id": 1
+    "blog": [{
+            "id": "1",
+            "topic": "Why Nadal is so good on clay?",
+            "postedBy": "Juan",
+            "createdAt": "2016-12-31T11:31:13.840Z",
+            "comments": [{
+                    "name": "Petar",
+                    "message": "Because is very patient and fast on the court!"
+                },
+                {
+                    "name": "Hristaka",
+                    "message": "Cause Uncle Toni is great!"
+                }
+            ]
         },
         {
-            "username": "dgdfg",
-            "passHash": "1234",
-            "usernameToLower": "dgdfg",
-            "id": 1
+            "id": "2",
+            "topic": "Why Monaco retired?",
+            "postedBy": "Juan",
+            "createdAt": "2016-12-31T11:31:13.840Z",
+            "comments": [{
+                    "name": "Petar",
+                    "message": "Because is very patient and fast on the court!"
+                },
+                {
+                    "name": "Hristaka",
+                    "message": "Cause Uncle Toni is great!"
+                }
+            ]
         }
     ],
-    "cart": [{
-            "id": 9,
-            "name": "Orchid beauty",
-            "createdAt": "2016-12-31T11:31:13.840Z",
-            "imgs": [
-                "images/orchid1.jpg",
-                "images/orchid2.jpg",
-                "images/orchid3.jpg",
-                "images/orchid4.jpg"
-            ],
-            "price": 30,
-            "category": "orchids",
-            "rating": 4,
-            "summary": "Elegant bouquet with pink orchids.",
-            "orders": 4
+    "media": [{
+            "id": "1",
+            "imageUrl": "images/media-50px.jpg",
+            "description": "Juan Monaco is the greatest one of all time"
         },
         {
-            "id": 10,
-            "name": "Aphelandra",
-            "createdAt": "2016-12-31T11:31:13.840Z",
-            "imgs": [
-                "images/plants1.jpg",
-                "images/plants2.jpg",
-                "images/plants3.jpg"
-            ],
-            "price": 10,
-            "category": "plants",
-            "rating": 3,
-            "summary": "Aphelandra decrated in gift bag.",
-            "orders": 4
+            "id": "2",
+            "imageUrl": "images/media-50px.jpg",
+            "description": "Juan Monaco is the greatest one of all time"
+        },
+        {
+            "id": "3",
+            "imageUrl": "images/media-50px.jpg",
+            "description": "Juan Monaco is the greatest one of all time"
+        },
+        {
+            "id": "4",
+            "imageUrl": "images/media-50px.jpg",
+            "description": "Juan Monaco is the greatest one of all time"
+        },
+        {
+            "id": "5",
+            "imageUrl": "images/media-50px.jpg",
+            "description": "Juan Monaco is the greatest one of all time"
+        },
+        {
+            "id": "6",
+            "imageUrl": "images/media-50px.jpg",
+            "description": "Juan Monaco is the greatest one of all time"
         }
     ]
 }

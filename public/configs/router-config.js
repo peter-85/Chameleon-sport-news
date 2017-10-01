@@ -12,7 +12,7 @@ class Router {
             // });
 
             this.get('#/', (sammy) => sammy.redirect('#/home'));
-            this.get('#/home', () => htmlHandler.setHtml('home', '#content'));
+            this.get('#/home', newsController.getAll);
 
             //Account
             this.get('#/tennisNews', newsController.getTennisNews);

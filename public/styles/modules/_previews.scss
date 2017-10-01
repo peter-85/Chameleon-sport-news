@@ -1,0 +1,45 @@
+.previews {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 50px;
+}
+
+.preview {
+    width: 240px;
+    &:not(:last-child) {
+        margin-right: 70px;
+    }
+    &__title {
+        font-size: 20px;
+        overflow: hidden;
+        font-family: 'Kreon-Light';
+    }
+    &__summary {
+        font-size: 12px;
+        font-family: 'Droid-Sans';
+        color: $secondaryColor;
+        padding: 20px 5px 35px 5px;
+        line-height: 170%;
+    }
+    &__image-container {
+        width: 240px;
+        height: 125px;
+        &:hover .preview__image {
+            opacity: 0.5;
+        }
+        &:hover .preview__hover-icon {
+            visibility: visible;
+        }
+    }
+    &__hover-icon {
+        position: relative;
+        bottom: 62px;
+        left: 50%;
+        display: inline-block;
+        margin: -1.67em 0 0 -1.67em;
+        width: 40px;
+        height: 40px;
+        background: url("images/preview-hover-icon.png");
+        visibility: hidden;
+    }
+}

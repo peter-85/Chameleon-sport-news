@@ -6,11 +6,11 @@ const app = express();
 
 
 
-const low = require('lowdb')
-const FileSync = require('lowdb/adapters/FileSync')
+const low = require('lowdb');
+const FileSync = require('lowdb/adapters/FileSync');
 
-const adapter = new FileSync('server/data/data.json')
-const db = low(adapter)
+const adapter = new FileSync('server/data/data.json');
+const db = low(adapter);
 
 app.use(express.static(__dirname + '/../public'));
 
@@ -20,10 +20,14 @@ app.get('/', (req, res) => {
 });
 
 
-let newsController = require("./controllers/news-controller")(db);
+let newsController = require('./controllers/news-controller')(db);
 
-app.get("/api/news", newsController.getNews);
-app.get("/api/news/tennisnews", newsController.getTennisNews);
+app.get('/api/news', newsController.getNews);
+app.get('/api/news/tennisnews', newsController.getTennisNews);
+app.get('/api/news/latestSportNews', newsController.getLatestSportNews);
+app.get('/api/getFromBlog', newsController.getRecentFromBlog);
+app.get('/api/news/recentPosts', newsController.getRecentPosts);
+app.get('/api/news/media', newsController.getMedia);
 
 app.listen(port, () => {
     console.log(`Server is up on port ${port}`);

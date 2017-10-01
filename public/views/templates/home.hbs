@@ -1,0 +1,120 @@
+<header class="secondary-header">
+    <nav class="secondary-header__nav">
+        <li><a href="#" class="first-el">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Page Templates</a></li>
+        <li><a href="#">Shortcodes</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Page Templates</a></li>
+        <li><a href="#">Shortcodes</a></li>
+        <li><a href="#">Blog</a></li>
+    </nav>
+</header>
+
+<!-- Start of CArousel -->
+<div id="myCarousel" class="carousel slide" data-ride="carousel slide" data-interval="5000">
+
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+    <!-- Carousel pics -->
+    <div class="carousel-inner">
+
+        {{#tennisNews.result}}
+         {{#if @first}}
+        <div class="item active">
+            <img src={{image}} class="carousel-img">
+            <!-- CArousel main window caption -->
+            <div class="carousel-caption">
+                <h2>{{title}}</h2>
+                <p>{{summary}}</p>
+                <a href="#" class="btn carousel-caption-btn">Read More</a>
+            </div>
+        </div>
+        {{else}}
+        <div class="item">
+            <img src={{image}} class="carousel-img">
+            <div class="carousel-caption">
+                <h2>{{title}}</h2>
+                <p>{{summary}}</p>
+                <a href="#" class="btn carousel-caption-btn">Read More</a>
+            </div>
+        </div>
+        {{/if}} {{/tennisNews.result}}
+    </div>
+
+    <!-- Carousel navigation arrows -->
+    <span href="#myCarousel" class="right carousel-control" data-slide="next">
+                    <span>
+                         <img class="carousel-right-arrow" src="images/carousel-right-arrow.png" />
+                    </span>
+    </span>
+    <span href="#myCarousel" class="left carousel-control" data-slide="prev">
+                        <span>
+                             <img class="carousel-left-arrow" src="images/carousel-left-arrow.png" />
+                        </span>
+    </span>
+</div>
+<!-- End of CArousel -->
+
+<div class="jumbotron main-jumbotron__section">
+    <hr class="section-separator">
+
+    <h2>"The ones who have talent are good but the ones who practice are great!"</h2>
+    <p class="lead">Hard work beats talent when talent doesn’t work hard.</p>
+
+    <hr class="section-separator">
+</div>
+
+
+<section id="main-content" class="group">
+    <div class="previews">
+        {{#latestSportNews.result}}
+        <article class="preview">
+            <h2 class="preview__title">{{title}}</h2>
+            <div class="preview__image-container">
+                <a href="#/posts/{{key}}" class="preview__anchor">
+                    <img src="{{image}}" alt="{{title}}" class="preview__image">
+                    <span class="preview__hover-icon"></span>
+                </a>
+            </div>
+            <p class="preview__summary">{{summary}}</p>
+        </article>
+        {{/latestSportNews.result}}
+    </div> 
+    <div class="blog-media">
+        <aside class="blog-p">
+            <h4 class="blog-p__title">From The Blog</h4>
+            <ul class="blog-p__posts">
+                {{#recentPosts.result}}
+                <li><a href="{{key}}">{{title}}</a></li>
+                {{/recentPosts.result}}
+            </ul>
+        </aside>
+        <aside class="home-aside">
+            <h4 class="related-links-title">Multi-Media Bar</h4>
+            <div id="multi-media-bar" class="group">
+                {{#media.result}}
+                <div class="img-container media-img-container">
+                    <img src="{{imageUrl}}" alt="{{description}}" class="post-img media-img">
+                    <span class="media-hover-icon"></span>
+                    <div class="media-description">
+                        <p>{{description}}</p>
+                        <span class="media-arrow"></span>
+                    </div>
+                </div>
+                {{/media.result}}
+                <ul class="media-nav">
+                    <li><a href="#" class="media-prev">Prev</a></li>
+                    <li><a href="#" class="media-next">Next</a></li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+</section>
+

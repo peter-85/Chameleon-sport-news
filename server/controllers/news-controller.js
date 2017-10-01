@@ -1,9 +1,9 @@
-// const _ = require("lodash");
+const _ = require("lodash");
 
 module.exports = (db) => {
     db.defaults({
             news: [],
-            users: []
+            blog: []
         })
         .value();
 
@@ -11,6 +11,15 @@ module.exports = (db) => {
     function getNewsFromDB() {
         return db.get('news').value();
     }
+
+    function getPostsBlogFromDB() {
+        return db.get('blog').value();
+    }
+
+    function getMediaFromDB() {
+        return db.get('media').value();
+    }
+
 
     function getNews(req, res) {
         const news = getNewsFromDB();
@@ -27,10 +36,43 @@ module.exports = (db) => {
         });
     };
 
+    function getLatestSportNews(req, res) {
+        const news = getNewsFromDB()['latestSportNews'];
+        res.send({
+            result: news
+        });
+    };
+
+    function getRecentPosts(req, res) {
+        const posts = getNewsFromDB()['recentPosts'];
+        res.send({
+            result: posts
+        });
+    };
+
+    function getRecentFromBlog(req, res) {
+        const posts = getPostsBlogFromDB();
+        res.send({
+            result: posts
+        });
+    }
+
+    function getMedia(req, res) {
+        const media = getMediaFromDB();
+        res.send({
+            result: media
+        });
+    }
+
+
 
 
     return {
         getNews,
         getTennisNews,
+        getLatestSportNews,
+        getRecentFromBlog,
+        getRecentPosts,
+        getMedia,
     };
 };

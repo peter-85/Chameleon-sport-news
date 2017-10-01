@@ -1,0 +1,97 @@
+.carousel {
+    max-width: 960px;
+    max-height: 332px;
+}
+
+.carousel-img {
+    object-fit: cover;
+    width: 960px;
+    max-height: 332px;
+    border: 1px solid rgb(240, 240, 240);
+    box-shadow: 1px 4px 6px 1px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Carousel navigation arrows and bottom points*/
+
+.right span {
+    float: right;
+    padding-top: 100%;
+}
+
+.carousel-right-arrow {
+    margin-right: -8px;
+    cursor: pointer;
+}
+
+.left span {
+    float: left;
+    padding-top: 100%;
+    color: white;
+}
+
+.carousel-left-arrow {
+    margin-left: -8px;
+    cursor: pointer;
+}
+
+
+/* Carousel  bottom points*/
+
+.carousel-indicators {
+    bottom: -15%
+}
+
+.carousel-indicators li {
+    border: none;
+    border-radius: 50%;
+    background-color: rgb(223, 223, 223);
+}
+
+.carousel-indicators .active {
+    border-radius: 50%;
+    border: 2.5px solid rgb(223, 223, 223);
+    background-color: rgb(30, 30, 30)
+}
+
+
+/* Carousel main window caption */
+
+.carousel-caption {
+    right: 5%;
+    padding-top: 36px;
+    padding-right: 30px;
+    padding-left: 32px;
+    margin-bottom: 25px;
+    left: auto;
+    width: 413px;
+    height: 235px;
+    background-color: rgba(0, 0, 0, 0.59);
+    text-align: left;
+}
+
+.carousel-caption h2 {
+    font-family: 'Kreon-Light';
+    font-size: 28px;
+    font-weight: 100;
+    margin-top: 0;
+    color: rgb(255, 255, 255)
+}
+
+.carousel-caption p {
+    font-family: 'Droid-Sans';
+    line-height: 170%;
+    font-size: 12px;
+    color: rgb(178, 168, 163);
+}
+
+.carousel-caption-btn {
+    float: right;
+    background-color: rgba(14, 13, 1, 0.3);
+    font-family: Kreon;
+    font-size: 13px;
+    color: rgb(123, 146, 151);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}

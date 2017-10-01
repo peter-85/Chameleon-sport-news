@@ -1,0 +1,29 @@
+.main-jumbotron__section {
+    background-color: rgb(255, 255, 255);
+    max-height: 130px;
+    padding-top: 0px;
+    margin-top: 55px;
+    margin-bottom: 5px;
+    text-align: center;
+    vertical-align: center
+}
+
+.main-jumbotron__section h2 {
+    font-family: 'Kreon-Light';
+    font-weight: 500;
+    position: relative;
+    top: -10px
+}
+
+.main-jumbotron__section p {
+    font-family: 'Kreon-Light';
+    font-weight: 500;
+    color: rgb(175, 175, 175);
+    position: relative;
+    top: -15px;
+}
+
+.section-separator {
+    width: 890px;
+    margin-bottom: 0px;
+}
