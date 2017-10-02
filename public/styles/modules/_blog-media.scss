@@ -1,11 +1,21 @@
 .blog-media {
     display: flex;
     padding: 0 50px;
+    @mixin atMedium {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
 
 .blog-p {
-    width: 240px;
+    min-width: 240px;
     margin-right: 70px;
+    @mixin atSmall {
+        display: none;
+    }
+    @mixin atMedium {
+        margin-right: 0;
+    }
     &__posts {
         font-size: 12px;
         font-family: "Droid-Sans";
@@ -25,11 +35,14 @@
 }
 
 .media {
-    width: 550px;
+    @mixin atMedium {
+        text-align: center;
+    }
     &__title {
         font-family: 'Kreon-Light';
     }
     &__bar {
+        max-width: 550px;
         position: absolute;
         border-radius: 0.25em;
         padding: 1.08em 1.17em 1.25em 2.33em;
@@ -37,6 +50,24 @@
         border: 1px solid #f0f0f0;
         border-right-color: #d1d1d1;
         border-bottom-color: #d1d1d1;
+        @mixin atSmall {
+            position: relative;
+            border: none;
+        }
+        @mixin atMedium {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            position: relative;
+            border: none;
+        }
+        @mixin atLarge {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-right: 18px;
+            padding-bottom: 0;
+        }
     }
     &__img-container {
         box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
@@ -48,7 +79,13 @@
         margin-right: 1.42em;
         padding: 0.25em;
         width: 4.5em;
-        height: 4.5em
+        height: 4.5em;
+        @mixin atMedium {
+            margin-bottom: 10px;
+        }
+        @mixin atLarge {
+            margin-bottom: 17px;
+        }
     }
     &__img-container:hover .media__img {
         opacity: 0.75;
@@ -58,6 +95,9 @@
     }
     &__img-container:hover .media__description {
         display: block;
+        @mixin atMedium {
+            display: none;
+        }
     }
     &__hover-icon {
         position: absolute;
@@ -65,8 +105,8 @@
         left: 50%;
         display: inline-block;
         margin: -1.37em 0 0 -1.37em;
-        width: 2.75em;
-        height: 2.75em;
+        width: 33px;
+        height: 33px;
         background: url("images/media-hover-icon.png");
         visibility: hidden;
     }
@@ -112,10 +152,16 @@
     &__prev {
         left: -1em;
         background: url("images/media-left-arrow.png");
+        @mixin atMedium {
+            left: 0;
+        }
     }
     &__next {
         right: -1em;
         background: url("images/media-right-arrow.png");
+        @mixin atMedium {
+            right: 0;
+        }
     }
 }
 

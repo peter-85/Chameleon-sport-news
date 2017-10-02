@@ -58,7 +58,7 @@ body {
 }
 
 .main-window {
-    width: 960px;
+    max-width: 960px;
     margin: auto;
     border-top: 1px solid rgb(255, 255, 255);
     margin-top: 50px;

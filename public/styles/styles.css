@@ -1,6 +1,6 @@
 @import "normalize.css";
 @import "./base/_variables.scss";
-@import "./base/_mixins";
+@import "./base/_mixins.scss";
 @import "./base/_global";
 @import "./modules/_site-header.scss";
 @import "./modules/_site-footer.scss";

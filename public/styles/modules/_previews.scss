@@ -2,28 +2,74 @@
     display: flex;
     flex-wrap: wrap;
     padding: 0 50px;
+    justify-content: center;
+    @mixin atXLarge {
+        justify-content: start;
+    }
+    @mixin atMedium {
+        justify-content: space-evenly;
+    }
 }
 
 .preview {
     width: 240px;
+    @mixin atMedium {
+        width: 350px;
+    }
+    @mixin atLarge {
+        width: 480px;
+    }
+    &:first-child .preview__title {
+        @mixin atSmall {
+            margin-top: 30px;
+        }
+        @mixin atMedium {
+            margin-top: 35px;
+        }
+        @mixin atLarge {
+            margin-top: 35px;
+        }
+    }
     &:not(:last-child) {
-        margin-right: 70px;
+        margin-right: 0px;
+        @mixin atXLarge {
+            margin-right: 70px;
+        }
     }
     &__title {
         font-size: 20px;
         overflow: hidden;
         font-family: 'Kreon-Light';
+        @mixin atSmall {
+            margin-top: 10px;
+        }
     }
     &__summary {
-        font-size: 12px;
+        font-size: 14px;
         font-family: 'Droid-Sans';
         color: $secondaryColor;
-        padding: 20px 5px 35px 5px;
+        padding: 20px 5px 13px 5px;
         line-height: 170%;
+        @mixin atSmall {
+            padding: 5px;
+            font-size: 12px;
+        }
+        @mixin atXLarge {
+            padding: 20px 5px 35px 5px;
+            font-size: 12px;
+        }
     }
     &__image-container {
         width: 240px;
         height: 125px;
+        @mixin atMedium {
+            width: 350px;
+            height: 182px;
+        }
+        @mixin atLarge {
+            width: 480px;
+            height: 250px;
+        }
         &:hover .preview__image {
             opacity: 0.5;
         }
@@ -31,9 +77,21 @@
             visibility: visible;
         }
     }
+    &__image {
+        width: 240px;
+        height: 125px;
+        @mixin atMedium {
+            width: 350px;
+            height: auto;
+        }
+        @mixin atLarge {
+            width: 480px;
+            height: auto;
+        }
+    }
     &__hover-icon {
         position: relative;
-        bottom: 62px;
+        bottom: 50%;
         left: 50%;
         display: inline-block;
         margin: -1.67em 0 0 -1.67em;

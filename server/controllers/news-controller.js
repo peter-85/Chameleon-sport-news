@@ -51,7 +51,7 @@ module.exports = (db) => {
     };
 
     function getRecentFromBlog(req, res) {
-        const posts = getPostsBlogFromDB();
+        const posts = getPostsBlogFromDB().find({ id: 1 });
         res.send({
             result: posts
         });
