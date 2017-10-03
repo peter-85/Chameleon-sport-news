@@ -1,14 +1,24 @@
 .carousel {
     max-width: 960px;
     max-height: 332px;
+    @mixin atSmall {
+        width: 100%;
+        padding-top: 65px;
+    }
 }
 
 .carousel-img {
     object-fit: cover;
-    width: 960px;
+    width: 100%;
     max-height: 332px;
     border: 1px solid rgb(240, 240, 240);
     box-shadow: 1px 4px 6px 1px rgba(0, 0, 0, 0.08);
+    @mixin atSmall {
+        width: 100%;
+    }
+    @mixin atLarge {
+        position: relative;
+    }
 }
 
 
@@ -68,6 +78,33 @@
     height: 235px;
     background-color: rgba(0, 0, 0, 0.59);
     text-align: left;
+    @mixin atSmall {
+        background-color: transparent;
+        left: 0;
+        margin-bottom: 5px;
+        width: unset;
+        height: unset;
+        max-width: 413px;
+        padding-bottom: 0;
+        text-align: right;
+        padding-right: 3px;
+        padding-left: 3px;
+        & :not(:first-child) {
+            display: none;
+        }
+    }
+    @mixin atMedium {
+        background-color: transparent;
+        & :not(:first-child) {
+            display: none;
+        }
+    }
+    @mixin atLarge {
+        background-color: transparent;
+        & :not(:first-child) {
+            display: none;
+        }
+    }
 }
 
 .carousel-caption h2 {
@@ -75,7 +112,29 @@
     font-size: 28px;
     font-weight: 100;
     margin-top: 0;
-    color: rgb(255, 255, 255)
+    color: rgb(255, 255, 255);
+    @mixin atSmall {
+        display: inline;
+        width: 85%;
+        font-size: responsive 14px 20px;
+        font-range: 200px 500px;
+    }
+    @mixin atMedium {
+        position: absolute;
+        bottom: -10%;
+        display: inline;
+        width: 85%;
+        right: -5%;
+        font-size: responsive 20px 24px;
+        font-range: 501px 800px;
+    }
+    @mixin atLarge {
+        position: absolute;
+        bottom: -10%;
+        width: 85%;
+        right: -3%;
+        display: inline;
+    }
 }
 
 .carousel-caption p {
@@ -94,4 +153,13 @@
     position: absolute;
     right: 0;
     bottom: 0;
+}
+
+.carousel-control {
+    @mixin atMedium {
+        padding-top: 10%;
+    }
+    @mixin atSmall {
+        top: 90px;
+    }
 }

@@ -12,7 +12,20 @@
     font-family: 'Kreon-Light';
     font-weight: 500;
     position: relative;
-    top: -10px
+    top: -10px;
+    @mixin atSmall {
+        padding: 0 20px;
+        font-size: responsive 15px 20px;
+        font-range: 200px 500px;
+    }
+    @mixin atMedium {
+        padding: 0 15px;
+        font-size: responsive 20px 26px;
+        font-range: 501px 800px;
+    }
+    @mixin atLarge {
+        padding: 0 30px;
+    }
 }
 
 .main-jumbotron__section p {
@@ -21,9 +34,30 @@
     color: rgb(175, 175, 175);
     position: relative;
     top: -15px;
+    @mixin atSmall {
+        display: none;
+    }
+    @mixin atMedium {
+        padding: 0 20px;
+        font-size: responsive 18px 21px;
+        font-range: 501px 800px;
+    }
 }
 
 .section-separator {
-    width: 890px;
+    width: 90%;
     margin-bottom: 0px;
+    @mixin atSmall {
+        margin-bottom: 15px;
+        margin-top: 0;
+    }
+    @mixin atXLarge {
+        width: 890px;
+    }
+}
+
+.jumbotron {
+    @mixin atSmall {
+        padding-bottom: 0;
+    }
 }

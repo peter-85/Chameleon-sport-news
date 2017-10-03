@@ -30,12 +30,13 @@ const gulp = require('gulp'),
     cssImport = require('postcss-import'),
     mixins = require('postcss-mixins'),
     hexrgba = require('postcss-hexrgba');
+const rucksack = require('rucksack-css');
 const sass = require('gulp-sass');
 
 gulp.task('styles', function() {
     return gulp.src('./styles/*.css')
         // .pipe(sass().on('error', sass.logError))
-        .pipe(postcss([cssImport, mixins, nested, cssvars, hexrgba, autoprefixer]))
+        .pipe(postcss([cssImport, mixins, nested, cssvars, hexrgba, autoprefixer, rucksack]))
         .on('error', function(errorInfo) {
             console.log(errorInfo.toString());
             this.emit('end');

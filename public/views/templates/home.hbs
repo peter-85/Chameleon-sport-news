@@ -6,7 +6,7 @@
         <li><a href="#">Page Templates</a></li>
         <li><a href="#">Shortcodes</a></li>
         <li><a href="#">Blog</a></li>
-        <li><a href="#">Page Templates</a></li>
+        {{!--<li><a href="#">Page Templates</a></li>--}}
         <li><a href="#">Shortcodes</a></li>
         <li><a href="#">Blog</a></li>
     </nav>
@@ -28,7 +28,11 @@
         {{#tennisNews.result}}
          {{#if @first}}
         <div class="item active">
-            <img src={{image}} class="carousel-img">
+            <picture>
+            <source srcset={{image}} media="(min-width: 501px)" class="carousel-img">
+            <img src={{image-small}} alt="" class="carousel-img">
+        </picture>
+            {{!--<img src={{image}} class="carousel-img">--}}
             <!-- CArousel main window caption -->
             <div class="carousel-caption">
                 <h2>{{title}}</h2>
@@ -38,7 +42,11 @@
         </div>
         {{else}}
         <div class="item">
-            <img src={{image}} class="carousel-img">
+            <picture>
+            <source srcset={{image}} media="(min-width: 501px)" class="carousel-img">
+            <img src={{image-small}} alt="" class="carousel-img">
+        </picture>
+            {{!--<img src={{image}} class="carousel-img">--}}
             <div class="carousel-caption">
                 <h2>{{title}}</h2>
                 <p>{{summary}}</p>

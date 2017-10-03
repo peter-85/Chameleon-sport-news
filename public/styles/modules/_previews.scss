@@ -21,7 +21,7 @@
     }
     &:first-child .preview__title {
         @mixin atSmall {
-            margin-top: 30px;
+            margin-top: 7px;
         }
         @mixin atMedium {
             margin-top: 35px;

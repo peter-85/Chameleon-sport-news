@@ -35,6 +35,7 @@
 }
 
 .media {
+    margin-top: 0;
     @mixin atMedium {
         text-align: center;
     }
@@ -53,6 +54,9 @@
         @mixin atSmall {
             position: relative;
             border: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
         }
         @mixin atMedium {
             display: flex;
@@ -80,6 +84,9 @@
         padding: 0.25em;
         width: 4.5em;
         height: 4.5em;
+        @mixin atSmall {
+            margin: 7px;
+        }
         @mixin atMedium {
             margin-bottom: 10px;
         }
@@ -93,10 +100,18 @@
     &__img-container:hover .media__hover-icon {
         visibility: visible;
     }
-    &__img-container:hover .media__description {
-        display: block;
+    .media__hover-icon {
+        @mixin atSmall {
+            visibility: visible;
+        }
         @mixin atMedium {
-            display: none;
+            visibility: visible;
+        }
+    }
+    &__img-container:hover .media__description {
+        display: none;
+        @mixin atXLarge {
+            display: block;
         }
     }
     &__hover-icon {
@@ -155,11 +170,17 @@
         @mixin atMedium {
             left: 0;
         }
+        @mixin atSmall {
+            left: 0;
+        }
     }
     &__next {
         right: -1em;
         background: url("images/media-right-arrow.png");
         @mixin atMedium {
+            right: 0;
+        }
+        @mixin atSmall {
             right: 0;
         }
     }

@@ -54,7 +54,10 @@
 body {
     margin: 0;
     border: 1px solid purple;
-    background-image: url('../../images/background.png')
+    background-image: url('../../images/background.png');
+    @mixin atSmall {
+        border: none;
+    }
 }
 
 .main-window {
@@ -64,6 +67,11 @@ body {
     margin-top: 50px;
     margin-bottom: 100px;
     background-color: white;
+    @mixin atSmall {
+        border-top: none;
+        margin-top: 0;
+        max-width: 500px;
+    }
 }
 
 ul,

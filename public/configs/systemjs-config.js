@@ -9,6 +9,7 @@ SystemJS.config({
         // app scripts 
         'main': './scripts/main.js',
         'router': './configs/router-config.js',
+        'mobileMenu': './scripts/modules/mobile-menu.js',
         // 'validator': './js/helpers/validator.js',
 
 
@@ -17,13 +18,13 @@ SystemJS.config({
         'templateHandler': './scripts/helpers/template-handler.js',
         'dataService': './scripts/data/data-service.js',
 
-        'newsController': './scripts/controllers/news-controller.js'
-            // 'headerController': './js/controllers/header-controller.js',
-            // 'accountController': '././js/controllers/account-controller.js',
-            // 'footerController': './js/controllers/footer-controller.js',
-            // 'chartProvider': './js/helpers/chart-provider.js',
-            // 'time': './js/helpers/date-provider.js',
-
+        'newsController': './scripts/controllers/news-controller.js',
+        // 'headerController': './js/controllers/header-controller.js',
+        // 'accountController': '././js/controllers/account-controller.js',
+        // 'footerController': './js/controllers/footer-controller.js',
+        // 'chartProvider': './js/helpers/chart-provider.js',
+        // 'time': './js/helpers/date-provider.js',
+        '$': 'https://code.jquery.com/jquery-3.2.1.min.js',
         // 'handlebars': 'https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.min.js',
 
     }
