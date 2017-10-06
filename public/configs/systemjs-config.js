@@ -10,6 +10,7 @@ SystemJS.config({
         'main': './scripts/main.js',
         'router': './configs/router-config.js',
         'mobileMenu': './scripts/modules/mobile-menu.js',
+        'modal': './scripts/modules/modal.js',
         // 'validator': './js/helpers/validator.js',
 
 
@@ -19,7 +20,7 @@ SystemJS.config({
         'dataService': './scripts/data/data-service.js',
 
         'newsController': './scripts/controllers/news-controller.js',
-        // 'headerController': './js/controllers/header-controller.js',
+        'flickrController': './scripts/controllers/flickr-controller.js',
         // 'accountController': '././js/controllers/account-controller.js',
         // 'footerController': './js/controllers/footer-controller.js',
         // 'chartProvider': './js/helpers/chart-provider.js',

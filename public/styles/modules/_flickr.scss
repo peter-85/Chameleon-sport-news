@@ -1,0 +1,46 @@
+.flickr {
+    display: block;
+    text-align: center;
+    &__heading {
+        display: inline-block;
+        font-family: 'Kreon-light';
+    }
+    &__subtitle {
+        font-size: 1.25em;
+        margin-bottom: 25px;
+    }
+    &__selection {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    &__button {
+        margin: 5px 12px;
+    }
+    &__button--selected {
+        background-color: #77acb9;
+    }
+    &__photos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-top: 20px;
+        li {
+            margin: 0 10px 25px 10px;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .flickr__photos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 700px) {
+    .flickr__selection {
+        justify-content: flex-start;
+    }
+}

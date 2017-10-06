@@ -552,6 +552,10 @@ a:link {
     line-height: 170%;
 }
 
+.flickr {
+    display: none;
+}
+
 .site-header {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -725,8 +729,8 @@ a:link {
             opacity: 0;
             -webkit-transform: scale(1.2);
                     transform: scale(1.2);
-            -webkit-transition: all .3s ease-out;
-            transition: all .3s ease-out;
+            -webkit-transition: all .4s ease-out;
+            transition: all .4s ease-out;
             z-index: -10;
             text-align: center;
             position: absolute;
@@ -1042,6 +1046,85 @@ a:link {
 .site-footer__bottom--dark {
             color: rgb(146, 146, 146);
         }
+
+.modal {
+    position: fixed;
+    z-index: 10001;
+    background-color: rgba(255, 255, 255, .94);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    -webkit-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
+
+.modal--is-visible {
+        opacity: 1;
+        visibility: visible;
+        -webkit-transform: scale(1);
+                transform: scale(1);
+        display: block;
+    }
+
+.modal__inner {
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+        text-align: center;
+    }
+
+.modal__description {
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 300;
+        line-height: 1.65;
+    }
+
+.modal__close {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        font-size: 3rem;
+        -webkit-transform: scaleX(1.2);
+                transform: scaleX(1.2);
+        -webkit-transform-origin: 100% 0;
+                transform-origin: 100% 0;
+        color: rgb(67, 125, 139);
+        cursor: pointer;
+    }
+
+.modal__close:hover {
+            color: black;
+        }
+
+.profile {
+    display: inline-block;
+    width: 235px;
+    padding: 0.7rem;
+}
+
+.profile__photo {
+        width: 100%;
+    }
+
+.profile__icons-container {
+        text-align: center;
+    }
+
+.profile__name {
+        text-align: center;
+    }
+
+.profile__icons {
+        padding: 0.5rem;
+    }
 
 .secondary-header {
     height: 56px;
