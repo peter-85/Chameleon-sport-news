@@ -16,6 +16,8 @@ class Router {
 
             //Account
             this.get('#/tennisNews', newsController.getTennisNews);
+            this.get('#/tennisNews/:id', (sammy) => newsController.getArticle(sammy));
+            this.post('#/tennisNews/comments', (sammy) => newsController.postComment(sammy));
             // this.get('#/account/sign-up', accountController.loadSignUpPage);
 
             // this.post('#/account/sign-in', accountController.signIn);
@@ -28,7 +30,7 @@ class Router {
             // // Other
             // this.get('#/about', () => htmlHandler.setHtml('about', '#content'));
             this.get('#/flickr-feeder', flickrController.getPhotos);
-            this.get('#/tennisNews/1', templateHandler.setTemplate('article', '#content'));
+            // this.get('#/tennisNews/1', templateHandler.setTemplate('article', '#content'));
             // this.post('#/contact', footerController.contact);
         });
 

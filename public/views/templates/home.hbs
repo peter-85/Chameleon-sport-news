@@ -6,7 +6,8 @@
         <li><a href="#">Page Templates</a></li>
         <li><a href="#">Shortcodes</a></li>
         <li><a href="#">Blog</a></li>
-        {{!--<li><a href="#">Page Templates</a></li>--}}
+        {{!--
+        <li><a href="#">Page Templates</a></li>--}}
         <li><a href="#">Shortcodes</a></li>
         <li><a href="#">Blog</a></li>
     </nav>
@@ -25,32 +26,33 @@
     <!-- Carousel pics -->
     <div class="carousel-inner">
 
-        {{#tennisNews.result}}
-         {{#if @first}}
+        {{#tennisNews.result}} {{#if @first}}
         <div class="item active">
-            <picture>
-            <source srcset={{image}} media="(min-width: 501px)" class="carousel-img">
-            <img src={{image-small}} alt="" class="carousel-img">
-        </picture>
-            {{!--<img src={{image}} class="carousel-img">--}}
+            <a href="#/tennisNews/{{id}}">
+            <picture>              
+                    <source srcset={{image}} media="(min-width: 501px)" class="carousel-img">
+                    <img src={{image-small}} alt="" class="carousel-img">
+            </picture>
+            </a>
             <!-- CArousel main window caption -->
             <div class="carousel-caption">
                 <h2>{{title}}</h2>
                 <p>{{summary}}</p>
-                <a href="#/posts/{{id}}" class="btn carousel-caption-btn">Read More</a>
+                <a href="#/tennisNews/{{id}}" class="btn carousel-caption-btn">Read More</a>
             </div>
         </div>
         {{else}}
         <div class="item">
-            <picture>
-            <source srcset={{image}} media="(min-width: 501px)" class="carousel-img">
-            <img src={{image-small}} alt="" class="carousel-img">
-        </picture>
-            {{!--<img src={{image}} class="carousel-img">--}}
+            <a href="#/tennisNews/{{id}}">
+                <picture>
+                    <source srcset={{image}} media="(min-width: 501px)" class="carousel-img">
+                    <img src={{image-small}} alt="" class="carousel-img">
+                </picture>
+            </a>
             <div class="carousel-caption">
                 <h2>{{title}}</h2>
                 <p>{{summary}}</p>
-                <a href="#" class="btn carousel-caption-btn">Read More</a>
+                <a href="#/tennisNews/{{id}}" class="btn carousel-caption-btn">Read More</a>
             </div>
         </div>
         {{/if}} {{/tennisNews.result}}
@@ -94,7 +96,7 @@
             <p class="preview__summary">{{summary}}</p>
         </article>
         {{/latestSportNews.result}}
-    </div> 
+    </div>
     <div class="blog-media">
         <aside class="blog-p">
             <h4 class="blog-p__title">From The Blog</h4>
@@ -125,4 +127,3 @@
         </aside>
     </div>
 </section>
-

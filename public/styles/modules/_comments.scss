@@ -15,17 +15,18 @@
     &__container {
         background-color: rgb(253, 253, 253);
         border: 1px solid rgb(240, 240, 240);
-        height: 170px;
+        max-height: 170px;
         display: flex;
         align-items: center;
-        justify-content: center;
-        margin-bottom: 27px;
+        justify-content: flex-start;
+        margin-bottom: 25px;
         @mixin atSmall {
             height: max-content;
             max-height: 400px;
         }
         &>div {
             padding: 14px;
+            width: 100%;
             @mixin atSmall {
                 display: flex;
                 flex-wrap: wrap;
@@ -37,6 +38,9 @@
         font-family: 'Kreon-Light';
         font-size: 20px;
         color: rgb(29, 29, 29);
+        @mixin atSmall {
+            padding-right: 10px;
+        }
     }
     &__date {
         font-family: Georgia;

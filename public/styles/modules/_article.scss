@@ -38,6 +38,7 @@
         }
     }
     &__container {
+        min-height: 220px;
         @mixin atSmall {
             display: flex;
             flex-wrap: wrap;

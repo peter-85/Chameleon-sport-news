@@ -3,9 +3,13 @@ import { templateHandler } from 'templateHandler'
 
 class NewsController {
 
-    // getTennisNews() {
-    //     return dataService.tennisNews();
-    // }
+    getArticle(sammy) {
+        const postId = sammy.params.id;
+        return dataService.article(postId).then((article) => {
+            console.log(article);
+            templateHandler.setTemplate('article', '#content', article);
+        });
+    }
 
     // getLatestSportNews() {
     //     return dataService.latestSportNews();
@@ -42,9 +46,32 @@ class NewsController {
                 media
             });
         })
-
     }
+    postComment(sammy) {
+
+        let name = sammy.params.name;
+        let email = sammy.params.email;
+        let message = sammy.params.message;
+        let postId = +window.location.href.split('tennisNews/')[1].split('/')[0],
+            url = `http://localhost:3000/api/news/tennisnews/${postId}`;
+
+        const data = {
+            name,
+            email,
+            message
+        }
+        console.log(data);
+        // Send the data using post
+        $.post(url, data)
+
+        // sammy.redirect(`#/tennisNews/${postId}`);
+        // $("#contact-form")[0].reset();
+        location.reload(true);
+
+
+    };
 }
+
 
 const newsController = new NewsController();
 

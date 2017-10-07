@@ -2097,6 +2097,10 @@ a:link {
     }
     }
 
+.article__container {
+        min-height: 220px;
+    }
+
 @media (max-width: 500px) {
 
 .article__container {
@@ -2183,17 +2187,17 @@ a:link {
 .comments__container {
         background-color: rgb(253, 253, 253);
         border: 1px solid rgb(240, 240, 240);
-        height: 170px;
+        max-height: 170px;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-        margin-bottom: 27px;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+        margin-bottom: 25px;
     }
 
 @media (max-width: 500px) {
@@ -2208,6 +2212,7 @@ a:link {
 
 .comments__container>div {
             padding: 14px;
+            width: 100%;
         }
 
 @media (max-width: 500px) {
@@ -2228,6 +2233,13 @@ a:link {
         font-family: 'Kreon-Light';
         font-size: 20px;
         color: rgb(29, 29, 29);
+    }
+
+@media (max-width: 500px) {
+
+.comments__author {
+            padding-right: 10px
+    }
     }
 
 .comments__date {

@@ -69,7 +69,7 @@ module.exports = (db) => {
     }
 
     function getDetailTennisNews(req, res) {
-        const id = req.params.id;
+        const id = +req.params.id;
 
         MongoClient.connect(mlabUrl, (err, db) => {
             if (err) {
@@ -81,7 +81,7 @@ module.exports = (db) => {
             db.collection('tennisNews').findOne({ id: id }).then((tennisNews) => {
                 console.log(tennisNews);
                 res.send({
-                    result: tennisNews
+                    article: tennisNews
                 });
             }, (err) => {
                 console.log(err);
@@ -89,6 +89,29 @@ module.exports = (db) => {
             // db.close();
         });
     }
+
+    function postComment(req, res) {
+        MongoClient.connect(mlabUrl, (err, db) => {
+            const comment = req.body.message;
+            const id = +req.params.id;
+            let date = new Date();
+            const currentDate = date.getDate() + "/" +
+                (date.getMonth() + 1) + "/" +
+                date.getFullYear();
+            const data = {
+                name: req.body.name,
+                email: req.body.email,
+                message: req.body.message,
+                date: currentDate
+            }
+            db.collection('tennisNews').update({ id: id }, {
+                $push: {
+                    comments: data
+                }
+            });
+        });
+    }
+
 
 
     return {
@@ -98,6 +121,7 @@ module.exports = (db) => {
         getRecentFromBlog,
         getRecentPosts,
         getMedia,
-        getDetailTennisNews
+        getDetailTennisNews,
+        postComment
     };
 };
