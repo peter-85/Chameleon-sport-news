@@ -28,6 +28,14 @@
             color: rgb(131, 131, 131);
             display: block;
         }
+        &:nth-child(odd) {
+            @mixin atMedium {
+                display: none;
+            }
+            @mixin atSmall {
+                display: none;
+            }
+        }
     }
     &__logo {
         display: inline-block;

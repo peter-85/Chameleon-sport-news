@@ -17,6 +17,9 @@ class NewsController {
     //     });
     // }
 
+    // getTennisArticle() {
+    //     return dataService.tennisArticle();
+    // }
 
     getAll() {
         let promises = [

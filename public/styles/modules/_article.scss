@@ -1,0 +1,47 @@
+.article {
+    max-width: 550px;
+    padding-left: 0px;
+    color: rgb(146, 146, 146);
+    @mixin atSmall {
+        width: 100%;
+        max-width: 500px;
+        padding: 0 15px;
+    }
+    @mixin atMedium {
+        width: 100%;
+        max-width: 800px;
+        padding: 0 15px;
+    }
+    &__title {
+        font-family: 'Kreon-Light';
+        font-size: 15px;
+        border: 1px solid rgb(240, 240, 240);
+        border-left: transparent;
+        border-right: transparent;
+        vertical-align: middle;
+        line-height: 30px;
+        margin-bottom: 17px;
+    }
+    &__text {
+        font-family: 'Droid-Sans';
+        font-size: 12px;
+    }
+    &__img {
+        width: 200px;
+        height: 200px;
+        margin-right: 36px;
+        @mixin atSmall {
+            margin-bottom: 13px;
+        }
+        @mixin atMedium {
+            margin-bottom: 13px;
+        }
+    }
+    &__container {
+        @mixin atSmall {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+}

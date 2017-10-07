@@ -1,0 +1,41 @@
+@import "../_article.scss";
+@import "../_right-panel.scss";
+@import "../_comments.scss";
+.main-content {
+    max-width: 860px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: rgb(255, 255, 255);
+}
+
+.pull-content-right {
+    margin-right: 0;
+    padding-right: 0
+}
+
+@media (max-width: 500px) {
+    .pull-content-right {
+        display: none;
+    }
+}
+
+.top-header-currentPage {
+    margin-top: 15px;
+    font-family: 'Kreon-light';
+    font-size: 14px;
+    color: rgb(204, 204, 204);
+    padding-left: 48px;
+}
+
+@media (max-width: 500px) {
+    .top-header-currentPage {
+        margin-top: 0;
+    }
+}
+
+.top-header-currentPage span {
+    color: rgb(89, 89, 89);
+    font-weight: 580
+}

@@ -1,0 +1,30 @@
+.right-panel {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Droid-Sans';
+    font-size: 12px;
+    color: rgb(160, 160, 160);
+    @mixin atMedium {
+        display: none;
+    }
+    & li:last-child {
+        margin-bottom: 42px;
+    }
+    &__container {
+        margin: auto
+    }
+    &__container>span {
+        font-family: 'Kreon-Light';
+        font-size: 20px;
+        color: rgb(29, 29, 29);
+        display: block;
+        margin-bottom: 17px;
+    }
+    &__container li {
+        list-style-type: disc;
+        padding-right: 0px;
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-bottom: 16px;
+    }
+}

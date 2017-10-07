@@ -1,3 +1,7 @@
+const { MongoClient, ObjectId } = require('mongodb');
+
+const mlabUrl = 'mongodb://peter_85:fce13382@ds040637.mlab.com:40637/chameleon-final-project-telerik';
+
 const _ = require("lodash");
 
 module.exports = (db) => {
@@ -64,7 +68,27 @@ module.exports = (db) => {
         });
     }
 
+    function getDetailTennisNews(req, res) {
+        const id = req.params.id;
 
+        MongoClient.connect(mlabUrl, (err, db) => {
+            if (err) {
+                return console.log('Unable to connect to MongoDB server');
+            }
+            console.log('Connected with MongoDb ');
+
+            console.log(id);
+            db.collection('tennisNews').findOne({ id: id }).then((tennisNews) => {
+                console.log(tennisNews);
+                res.send({
+                    result: tennisNews
+                });
+            }, (err) => {
+                console.log(err);
+            });
+            // db.close();
+        });
+    }
 
 
     return {
@@ -74,5 +98,6 @@ module.exports = (db) => {
         getRecentFromBlog,
         getRecentPosts,
         getMedia,
+        getDetailTennisNews
     };
 };

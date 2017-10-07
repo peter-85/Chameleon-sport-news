@@ -13,9 +13,11 @@
     "dependencies": {
         "@types/body-parser": "^1.16.5",
         "@types/lowdb": "^0.15.0",
+        "@types/mongodb": "^2.2.12",
         "body-parser": "^1.18.2",
         "express": "^4.15.4",
         "lowdb": "^1.0.0",
+        "mongodb": "^2.2.31",
         "underscore-db": "^0.12.2"
     },
     "devDependencies": {

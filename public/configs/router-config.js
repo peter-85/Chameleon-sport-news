@@ -1,5 +1,5 @@
 import { htmlHandler } from 'htmlHandler';
-// import { footerController } from 'footerController';
+import { templateHandler } from 'templateHandler';
 import { flickrController } from 'flickrController';
 import { newsController } from 'newsController';
 
@@ -28,7 +28,7 @@ class Router {
             // // Other
             // this.get('#/about', () => htmlHandler.setHtml('about', '#content'));
             this.get('#/flickr-feeder', flickrController.getPhotos);
-            // this.post('#/newsletter', footerController.subscription);
+            this.get('#/tennisNews/1', templateHandler.setTemplate('article', '#content'));
             // this.post('#/contact', footerController.contact);
         });
 

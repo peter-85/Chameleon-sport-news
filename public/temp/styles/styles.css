@@ -976,6 +976,20 @@ a:link {
             display: block;
         }
 
+@media (max-width: 800px) and (min-width: 501px) {
+
+.site-footer__column:nth-child(odd) {
+                display: none
+        }
+    }
+
+@media (max-width: 500px) {
+
+.site-footer__column:nth-child(odd) {
+                display: none
+        }
+    }
+
 .site-footer__logo {
         display: inline-block;
     }
@@ -1395,6 +1409,10 @@ a:link {
     position: absolute;
     right: 0;
     bottom: 0;
+}
+
+.carousel-control {
+    width: 3%;
 }
 
 @media (max-width: 800px) and (min-width: 501px) {
@@ -2017,4 +2035,292 @@ a:link {
 
 .media-hover-video-icon {
     background: url("images/media-hover-video-icon.png");
+}
+
+.article {
+    max-width: 550px;
+    padding-left: 0px;
+    color: rgb(146, 146, 146);
+}
+
+@media (max-width: 500px) {
+
+.article {
+        width: 100%;
+        max-width: 500px;
+        padding: 0 15px
+}
+    }
+
+@media (max-width: 800px) and (min-width: 501px) {
+
+.article {
+        width: 100%;
+        max-width: 800px;
+        padding: 0 15px
+}
+    }
+
+.article__title {
+        font-family: 'Kreon-Light';
+        font-size: 15px;
+        border: 1px solid rgb(240, 240, 240);
+        border-left: transparent;
+        border-right: transparent;
+        vertical-align: middle;
+        line-height: 30px;
+        margin-bottom: 17px;
+    }
+
+.article__text {
+        font-family: 'Droid-Sans';
+        font-size: 12px;
+    }
+
+.article__img {
+        width: 200px;
+        height: 200px;
+        margin-right: 36px;
+    }
+
+@media (max-width: 500px) {
+
+.article__img {
+            margin-bottom: 13px
+    }
+    }
+
+@media (max-width: 800px) and (min-width: 501px) {
+
+.article__img {
+            margin-bottom: 13px
+    }
+    }
+
+@media (max-width: 500px) {
+
+.article__container {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center
+    }
+    }
+
+.right-panel {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-family: 'Droid-Sans';
+    font-size: 12px;
+    color: rgb(160, 160, 160);
+}
+
+@media (max-width: 800px) and (min-width: 501px) {
+
+.right-panel {
+        display: none
+}
+    }
+
+.right-panel li:last-child {
+        margin-bottom: 42px;
+    }
+
+.right-panel__container {
+        margin: auto
+    }
+
+.right-panel__container>span {
+        font-family: 'Kreon-Light';
+        font-size: 20px;
+        color: rgb(29, 29, 29);
+        display: block;
+        margin-bottom: 17px;
+    }
+
+.right-panel__container li {
+        list-style-type: disc;
+        padding-right: 0px;
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-bottom: 16px;
+    }
+
+.comments {
+    margin-bottom: 63px;
+}
+
+.comments__counter {
+        font-family: 'Kreon-Light';
+        font-size: 28px;
+        color: rgb(28, 28, 28);
+        margin-bottom: 22px;
+    }
+
+@media (max-width: 800px) and (min-width: 501px) {
+
+.comments__counter {
+            font-size: 18px
+    }
+    }
+
+@media (max-width: 500px) {
+
+.comments__counter {
+            font-size: 16px
+    }
+    }
+
+.comments__container {
+        background-color: rgb(253, 253, 253);
+        border: 1px solid rgb(240, 240, 240);
+        height: 170px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        margin-bottom: 27px;
+    }
+
+@media (max-width: 500px) {
+
+.comments__container {
+            height: -webkit-max-content;
+            height: -moz-max-content;
+            height: max-content;
+            max-height: 400px
+    }
+    }
+
+.comments__container>div {
+            padding: 14px;
+        }
+
+@media (max-width: 500px) {
+
+.comments__container>div {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -ms-flex-wrap: wrap;
+                    flex-wrap: wrap;
+                -webkit-box-pack: start;
+                    -ms-flex-pack: start;
+                        justify-content: flex-start
+        }
+    }
+
+.comments__author {
+        font-family: 'Kreon-Light';
+        font-size: 20px;
+        color: rgb(29, 29, 29);
+    }
+
+.comments__date {
+        font-family: Georgia;
+        font-size: 12px;
+        font-style: italic;
+    }
+
+@media (max-width: 500px) {
+
+.comments__date {
+            padding-right: 15px
+    }
+    }
+
+.comments img {
+        width: 68px;
+        height: 68px;
+        margin-right: 16px;
+    }
+
+.comments__btn {
+        font-family: 'Kreon-Light';
+        font-size: 12px;
+        color: rgb(44, 44, 44);
+        font-weight: 700;
+    }
+
+@media (max-width: 800px) and (min-width: 501px) {
+
+.comments__heading {
+            font-size: 22px
+    }
+    }
+
+@media (max-width: 500px) {
+
+.comments__heading {
+            font-size: 20px
+    }
+    }
+
+/* Post Comment section  */
+
+.leave-comment {
+    font-family: 'Droid-Sans';
+    font-size: 12px;
+    background-color: rgb(253, 253, 253);
+    border: 1px solid rgb(240, 240, 240);
+}
+
+.main-content {
+    max-width: 860px;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    background-color: rgb(255, 255, 255);
+}
+
+.pull-content-right {
+    margin-right: 0;
+    padding-right: 0
+}
+
+@media (max-width: 500px) {
+    .pull-content-right {
+        display: none;
+    }
+}
+
+.top-header-currentPage {
+    margin-top: 15px;
+    font-family: 'Kreon-light';
+    font-size: 14px;
+    color: rgb(204, 204, 204);
+    padding-left: 48px;
+}
+
+@media (max-width: 500px) {
+    .top-header-currentPage {
+        margin-top: 0;
+    }
+}
+
+.top-header-currentPage span {
+    color: rgb(89, 89, 89);
+    font-weight: 580
 }
