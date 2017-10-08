@@ -10,8 +10,8 @@
         font-family: 'Droid-Sans';
         font-size: 12px;
         color: rgb(160, 160, 160);
-        @mixin atSmall {
-            flex-basis: 160px;
+        @mixin atLarge {
+            flex-basis: 170px;
         }
         &>span {
             font-family: 'Kreon-Light';

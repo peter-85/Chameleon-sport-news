@@ -16,10 +16,10 @@ class Router {
 
             //Account
             this.get('#/tennisNews', newsController.getTennisNews);
-            this.get('#/tennisNews/:id', (sammy) => newsController.getArticle(sammy));
+            this.get('#/tennisNews/:id', (sammy) => newsController.getTennisArticle(sammy));
             this.post('#/tennisNews/comments', (sammy) => newsController.postComment(sammy));
-            // this.get('#/account/sign-up', accountController.loadSignUpPage);
 
+            this.get('#/latestSportNews/:id', (sammy) => newsController.getSportArticle(sammy));
             // this.post('#/account/sign-in', accountController.signIn);
             // this.post('#/account/sign-up', accountController.signUp);
 

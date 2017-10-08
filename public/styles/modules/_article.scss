@@ -25,17 +25,13 @@
     &__text {
         font-family: 'Droid-Sans';
         font-size: 12px;
+        text-align: justify;
     }
     &__img {
         width: 200px;
         height: 200px;
         margin-right: 36px;
-        @mixin atSmall {
-            margin-bottom: 13px;
-        }
-        @mixin atMedium {
-            margin-bottom: 13px;
-        }
+        margin-bottom: 13px;
     }
     &__container {
         min-height: 220px;

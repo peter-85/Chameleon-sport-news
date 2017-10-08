@@ -26,8 +26,11 @@ class DataService {
         return requester.getJSON('/api/news/media');
     }
 
-    article(postId) {
+    tennisArticle(postId) {
         return requester.getJSON(`/api/news/tennisnews/${postId}`);
+    }
+    sportArticle(postId) {
+        return requester.getJSON(`/api/news/latestSportNews/${postId}`);
     }
 
 }

@@ -60,12 +60,12 @@
 
     <!-- Carousel navigation arrows -->
     <span href="#myCarousel" class="right carousel-control" data-slide="next">
-                    <span>
+                    <span class="carousel-arrows">
                          <img class="carousel-right-arrow" src="images/carousel-right-arrow.png" />
                     </span>
     </span>
     <span href="#myCarousel" class="left carousel-control" data-slide="prev">
-                        <span>
+                        <span class="carousel-arrows">
                              <img class="carousel-left-arrow" src="images/carousel-left-arrow.png" />
                         </span>
     </span>
@@ -83,12 +83,18 @@
 
 
 <section id="main-content" class="group">
+    {{!--<div class="previews__title">
+    {{#latestSportNews.result}}
+            <h2 class="preview__title">{{title}}</h2>
+    {{/latestSportNews.result}}   
+    </div>     --}}
     <div class="previews">
+
         {{#latestSportNews.result}}
         <article class="preview">
             <h2 class="preview__title">{{title}}</h2>
             <div class="preview__image-container">
-                <a href="#/posts/{{key}}" class="preview__anchor">
+                <a href="#/latestSportNews/{{id}}" class="preview__anchor">
                     <img src="{{image}}" alt="{{title}}" class="preview__image">
                     <span class="preview__hover-icon"></span>
                 </a>

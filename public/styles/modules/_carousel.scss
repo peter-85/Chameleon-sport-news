@@ -1,6 +1,6 @@
 .carousel {
     max-width: 960px;
-    max-height: 332px;
+    max-height: 500px;
     @mixin atSmall {
         width: 100%;
         padding-top: 65px;
@@ -30,8 +30,27 @@
 }
 
 .carousel-right-arrow {
-    margin-right: -8px;
     cursor: pointer;
+    position: relative;
+    top: 35%;
+    @mixin atLarge {
+        margin-right: -8px;
+    }
+    @mixin atXLarge {
+        margin-right: -8px;
+    }
+}
+
+.carousel-left-arrow {
+    cursor: pointer;
+    position: relative;
+    top: 35%;
+    @mixin atLarge {
+        margin-left: -8px;
+    }
+    @mixin atXLarge {
+        margin-left: -8px;
+    }
 }
 
 .left span {
@@ -40,9 +59,8 @@
     color: white;
 }
 
-.carousel-left-arrow {
-    margin-left: -8px;
-    cursor: pointer;
+.carousel-arrows {
+    height: 100%;
 }
 
 
@@ -135,6 +153,10 @@
         right: -3%;
         display: inline;
     }
+    @mixin atXLarge {
+        height: 95px;
+        overflow: hidden;
+    }
 }
 
 .carousel-caption p {
@@ -142,6 +164,9 @@
     line-height: 170%;
     font-size: 12px;
     color: rgb(178, 168, 163);
+    height: 60px;
+    overflow: hidden;
+    text-align: justify;
 }
 
 .carousel-caption-btn {
@@ -157,10 +182,8 @@
 
 .carousel-control {
     width: 3%;
-    @mixin atMedium {
-        padding-top: 10%;
-    }
+    top: 20px;
     @mixin atSmall {
-        top: 90px;
+        top: 86px;
     }
 }

@@ -43,6 +43,12 @@
         @mixin atSmall {
             margin-top: 10px;
         }
+        @mixin atLarge {
+            padding-bottom: 5px;
+        }
+        @mixin atXLarge {
+            height: 45px;
+        }
     }
     &__summary {
         font-size: 14px;
@@ -50,13 +56,27 @@
         color: $secondaryColor;
         padding: 20px 5px 13px 5px;
         line-height: 170%;
+        text-align: justify;
         @mixin atSmall {
             padding: 5px;
             font-size: 12px;
+            height: 147px;
+            overflow: hidden;
+        }
+        @mixin atMedium {
+            height: 158px;
+            overflow: hidden;
+        }
+        @mixin atMedium {
+            height: 139px;
+            overflow: hidden;
         }
         @mixin atXLarge {
             padding: 20px 5px 35px 5px;
             font-size: 12px;
+            margin-bottom: 45px;
+            height: 99px;
+            overflow: hidden;
         }
     }
     &__image-container {

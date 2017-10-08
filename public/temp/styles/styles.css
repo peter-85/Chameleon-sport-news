@@ -951,11 +951,11 @@ a:link {
         color: rgb(160, 160, 160);
     }
 
-@media (max-width: 500px) {
+@media (max-width: 1050px) and (min-width: 801px) {
 
 .site-footer__column {
-            -ms-flex-preferred-size: 160px;
-                flex-basis: 160px
+            -ms-flex-preferred-size: 170px;
+                flex-basis: 170px
     }
     }
 
@@ -1085,6 +1085,11 @@ a:link {
         display: block;
     }
 
+.modal__heading {
+        max-width: 400px;
+        margin: auto;
+    }
+
 .modal__inner {
         position: absolute;
         width: 100%;
@@ -1195,7 +1200,7 @@ a:link {
 
 .carousel {
     max-width: 960px;
-    max-height: 332px;
+    max-height: 500px;
 }
 
 @media (max-width: 500px) {
@@ -1238,9 +1243,44 @@ a:link {
 }
 
 .carousel-right-arrow {
-    margin-right: -8px;
     cursor: pointer;
+    position: relative;
+    top: 35%;
 }
+
+@media (max-width: 1050px) and (min-width: 801px) {
+
+.carousel-right-arrow {
+        margin-right: -8px
+}
+    }
+
+@media (min-width: 1051px) {
+
+.carousel-right-arrow {
+        margin-right: -8px
+}
+    }
+
+.carousel-left-arrow {
+    cursor: pointer;
+    position: relative;
+    top: 35%;
+}
+
+@media (max-width: 1050px) and (min-width: 801px) {
+
+.carousel-left-arrow {
+        margin-left: -8px
+}
+    }
+
+@media (min-width: 1051px) {
+
+.carousel-left-arrow {
+        margin-left: -8px
+}
+    }
 
 .left span {
     float: left;
@@ -1248,9 +1288,8 @@ a:link {
     color: white;
 }
 
-.carousel-left-arrow {
-    margin-left: -8px;
-    cursor: pointer;
+.carousel-arrows {
+    height: 100%;
 }
 
 /* Carousel  bottom points*/
@@ -1393,11 +1432,22 @@ a:link {
 }
     }
 
+@media (min-width: 1051px) {
+
+.carousel-caption h2 {
+        height: 95px;
+        overflow: hidden
+}
+    }
+
 .carousel-caption p {
     font-family: 'Droid-Sans';
     line-height: 170%;
     font-size: 12px;
     color: rgb(178, 168, 163);
+    height: 60px;
+    overflow: hidden;
+    text-align: justify;
 }
 
 .carousel-caption-btn {
@@ -1413,19 +1463,13 @@ a:link {
 
 .carousel-control {
     width: 3%;
+    top: 20px;
 }
-
-@media (max-width: 800px) and (min-width: 501px) {
-
-.carousel-control {
-        padding-top: 10%
-}
-    }
 
 @media (max-width: 500px) {
 
 .carousel-control {
-        top: 90px
+        top: 86px
 }
     }
 
@@ -1654,19 +1698,52 @@ a:link {
     }
     }
 
+@media (max-width: 1050px) and (min-width: 801px) {
+
+.preview__title {
+            padding-bottom: 5px
+    }
+    }
+
+@media (min-width: 1051px) {
+
+.preview__title {
+            height: 45px
+    }
+    }
+
 .preview__summary {
         font-size: 14px;
         font-family: 'Droid-Sans';
         color: rgb(175, 175, 175);
         padding: 20px 5px 13px 5px;
         line-height: 170%;
+        text-align: justify;
     }
 
 @media (max-width: 500px) {
 
 .preview__summary {
             padding: 5px;
-            font-size: 12px
+            font-size: 12px;
+            height: 147px;
+            overflow: hidden
+    }
+    }
+
+@media (max-width: 800px) and (min-width: 501px) {
+
+.preview__summary {
+            height: 158px;
+            overflow: hidden
+    }
+    }
+
+@media (max-width: 800px) and (min-width: 501px) {
+
+.preview__summary {
+            height: 139px;
+            overflow: hidden
     }
     }
 
@@ -1674,7 +1751,10 @@ a:link {
 
 .preview__summary {
             padding: 20px 5px 35px 5px;
-            font-size: 12px
+            font-size: 12px;
+            margin-bottom: 45px;
+            height: 99px;
+            overflow: hidden
     }
     }
 
@@ -2075,26 +2155,14 @@ a:link {
 .article__text {
         font-family: 'Droid-Sans';
         font-size: 12px;
+        text-align: justify;
     }
 
 .article__img {
         width: 200px;
         height: 200px;
         margin-right: 36px;
-    }
-
-@media (max-width: 500px) {
-
-.article__img {
-            margin-bottom: 13px
-    }
-    }
-
-@media (max-width: 800px) and (min-width: 501px) {
-
-.article__img {
-            margin-bottom: 13px
-    }
+        margin-bottom: 13px;
     }
 
 .article__container {

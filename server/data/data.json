@@ -83,13 +83,23 @@
             }
         ],
         "latestSportNews": [{
-                "id": 19,
-                "title": "NBA Action is now on USA",
-                "summary": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, laboriosam laborum exercitationem! Natus voluptatum vel labore, assumenda! Molestias nisi ",
-                "fullText": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, laboriosam laborum exercitationem! Natus voluptatum vel labore, assumenda! Molestias nisi  porro aut odit corrupti, odio fuga est sequi dolor optio corporis quasi enim voluptates modi necessitatibus? Ullam eligendi recusandae facere voluptatibus dicta unde deleniti sit, doloremque architecto? Sed error deserunt ut magnam sapiente dolore provident voluptates iusto ipsa, qui eveniet facilis asperiores repellendus neque fuga? Sint repellendus rem delectus. Illo molestiae magnam eveniet consequatur ratione! Reiciendis ducimus magni ullam necessitatibus voluptates rerum dolore esse placeat corrupti ad, minus illo soluta, iure ipsam fugiat amet aut. ",
+                "id": 1,
+                "title": "Lionel Messi Is All Alone",
+                "summary": "It’s a funny thing, talking about what an athlete deserves. Sports are the ultimate results-oriented business, where no matter how much you love your mother or how kind and considerate you are to lovers and waiters or even how well you played in any given game, if",
+                "fullText": "It’s a funny thing, talking about what an athlete deserves. Sports are the ultimate results-oriented business, where no matter how much you love your mother or how kind and considerate you are to lovers and waiters or even how well you played in any given game, if the final whistle blows and you look up at the scoreboard and the other team has more points than yours, then they get the trophy and you go home with nothing, and that’s that. But it’s hard to feel like any athlete deserves anything more than Lionel Messi deserves to win the World Cup. Messi is the iconic player of his generation and quite possibly of all time, his brand of sporting superiority so vivid and searing and electric in color that it can’t even be classified along the traditional light spectrum. He does the hardest, coolest things in his sport way more often than anyone else, and does so with an ease and grace and artistry that makes watching his every match a beatific experience. He was the lodestar around which the greatest club team of all time was centered, has continued to shine just as bright even after the manager and players that made that team what it was have faded away, and, now at the age of 30, could very well be in the midst of his most impressive career accomplishment yet. On top of all that, he has become this legendary player after leaving his motherland as a boy, giving his entire heart and soul to his country in search of validation and acceptance from his skeptical countryman, only to repeatedly come up just short in agonizing fashion, receiving only ridicule and distrust from many fellow Argentines in response. Messi is the best player, has won and earned just about every single trophy and plaudit a player could imagine, regularly plays exceptionally well for club and country, wants nothing more than to win something for his country, and lacks only one that thing, a World Cup trophy, to permanently seal his place as the greatest player to ever lace up boots. This is what it means to say Messi deserves to win a World Cup, in every sense of the word.",
                 "createdAt": "2016-12-31T11:31:13.840Z",
                 "image": "images/latest-sport-news-1-480px.jpeg",
-                "comments": []
+                "comments": [{
+                        "name": "Petar",
+                        "email": "petraka@abv.bg",
+                        "message": "Well Nadal is better on claycourt but probably Federer is GOAT"
+                    },
+                    {
+                        "name": "Stefan",
+                        "email": "stefan@abv.bg",
+                        "message": "But Soderling is a great server and beat Nadal in RG 2009"
+                    }
+                ]
             },
             {
                 "id": 20,

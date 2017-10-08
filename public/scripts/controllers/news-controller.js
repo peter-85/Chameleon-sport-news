@@ -3,9 +3,17 @@ import { templateHandler } from 'templateHandler'
 
 class NewsController {
 
-    getArticle(sammy) {
+    getTennisArticle(sammy) {
         const postId = sammy.params.id;
-        return dataService.article(postId).then((article) => {
+        return dataService.tennisArticle(postId).then((article) => {
+            console.log(article);
+            templateHandler.setTemplate('article', '#content', article);
+        });
+    }
+
+    getSportArticle(sammy) {
+        const postId = sammy.params.id;
+        return dataService.sportArticle(postId).then((article) => {
             console.log(article);
             templateHandler.setTemplate('article', '#content', article);
         });
@@ -60,15 +68,9 @@ class NewsController {
             email,
             message
         }
-        console.log(data);
-        // Send the data using post
+
         $.post(url, data)
-
-        // sammy.redirect(`#/tennisNews/${postId}`);
-        // $("#contact-form")[0].reset();
         location.reload(true);
-
-
     };
 }
 

@@ -33,19 +33,14 @@ module.exports = (db) => {
         });
     };
 
-    function getTennisNews(req, res) {
-        const news = getNewsFromDB()['tennisNews'];
-        res.send({
-            result: news
-        });
-    };
 
-    function getLatestSportNews(req, res) {
-        const news = getNewsFromDB()['latestSportNews'];
-        res.send({
-            result: news
-        });
-    };
+
+    // function getLatestSportNews(req, res) {
+    //     const news = getNewsFromDB()['latestSportNews'];
+    //     res.send({
+    //         result: news
+    //     });
+    // };
 
     function getRecentPosts(req, res) {
         const posts = getNewsFromDB()['recentPosts'];
@@ -68,6 +63,24 @@ module.exports = (db) => {
         });
     }
 
+    function getTennisNews(req, res) {
+        MongoClient.connect(mlabUrl, (err, db) => {
+            if (err) {
+                return console.log('Unable to connect to MongoDB server');
+            }
+
+            db.collection('tennisNews').find().toArray().then((tennisNews) => {
+                console.log(tennisNews);
+                res.send({
+                    result: tennisNews
+                });
+            }, (err) => {
+                console.log(err);
+            });
+        });
+    }
+
+
     function getDetailTennisNews(req, res) {
         const id = +req.params.id;
 
@@ -75,9 +88,7 @@ module.exports = (db) => {
             if (err) {
                 return console.log('Unable to connect to MongoDB server');
             }
-            console.log('Connected with MongoDb ');
 
-            console.log(id);
             db.collection('tennisNews').findOne({ id: id }).then((tennisNews) => {
                 console.log(tennisNews);
                 res.send({
@@ -112,16 +123,54 @@ module.exports = (db) => {
         });
     }
 
+    function getLatestSportNews(req, res) {
+        MongoClient.connect(mlabUrl, (err, db) => {
+            if (err) {
+                return console.log('Unable to connect to MongoDB server');
+            }
+
+            db.collection('latestSportNews').find().toArray().then((latestSportNews) => {
+                // console.log(tennisNews);
+                res.send({
+                    result: latestSportNews
+                });
+            }, (err) => {
+                console.log(err);
+            });
+        });
+    }
+
+    function getDetailSportNews(req, res) {
+        const id = +req.params.id;
+
+        MongoClient.connect(mlabUrl, (err, db) => {
+            if (err) {
+                return console.log('Unable to connect to MongoDB server');
+            }
+
+            db.collection('latestSportNews').findOne({ id: id }).then((sportNews) => {
+                console.log(sportNews);
+                res.send({
+                    article: sportNews
+                });
+            }, (err) => {
+                console.log(err);
+            });
+            // db.close();
+        });
+    }
+
 
 
     return {
         getNews,
-        getTennisNews,
-        getLatestSportNews,
         getRecentFromBlog,
         getRecentPosts,
         getMedia,
+        getTennisNews,
         getDetailTennisNews,
-        postComment
+        postComment,
+        getLatestSportNews,
+        getDetailSportNews
     };
 };
