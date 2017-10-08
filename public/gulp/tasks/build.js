@@ -16,7 +16,7 @@ gulp.task('optimizeImages', ['deleteDistFolder'], () => {
             interlaced: true,
             multipass: true
         }))
-        .pipe(gulp.dest('../dist/images'));
+        .pipe(gulp.dest('./dist/images'));
 });
 
 gulp.task('usemin', ['deleteDistFolder', 'styles'], function() {
