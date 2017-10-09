@@ -4,6 +4,10 @@
       margin-bottom: 20px;
       background-color: rgb(253, 253, 253);
       border: 1px solid rgb(240, 240, 240);
+      @mixin atSmall {
+          flex-wrap: wrap;
+          justify-content: center;
+      }
   }
   
   .card-img-top {
@@ -18,12 +22,24 @@
       font-family: 'Droid-Sans';
       font-size: 12px;
       color: rgb(146, 146, 146);
+      max-height: 200px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      @mixin atSmall {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+      }
   }
   
-  .card-entry-text h4 {
+  .card-title {
       font-family: 'Kreon-Light';
       font-size: 17px;
       color: rgb(44, 44, 44);
+      margin-top: 5px;
+      //   height: 20px;
+      //   overflow: hidden;
   }
   
   .card-footer-btn {
@@ -40,17 +56,13 @@
       overflow: hidden;
   }
   
-  @media (max-width: 600px) {
-      .card-entry-container {
-          flex-wrap: wrap;
-          justify-content: center;
-      }
-  }
-  
-  @media (max-width: 600px) {
-      .card-entry-text {
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: space-between;
+  .card-horizontal-line {
+      visibility: hidden;
+      width: 100%;
+      @mixin atSmall {
+          visibility: visible;
+          height: 1px;
+          border: 0;
+          border-top: 1px solid #ccc;
       }
   }

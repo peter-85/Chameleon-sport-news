@@ -2417,6 +2417,17 @@ a:link {
       border: 1px solid rgb(240, 240, 240);
   }
 
+@media (max-width: 500px) {
+
+.card-entry-container {
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center
+  }
+    }
+
 .card-img-top {
       max-width: 200px;
       max-height: 200px;
@@ -2429,12 +2440,38 @@ a:link {
       font-family: 'Droid-Sans';
       font-size: 12px;
       color: rgb(146, 146, 146);
+      max-height: 200px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
   }
 
-.card-entry-text h4 {
+@media (max-width: 500px) {
+
+.card-entry-text {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+          -webkit-box-pack: justify;
+              -ms-flex-pack: justify;
+                  justify-content: space-between
+  }
+    }
+
+.card-title {
       font-family: 'Kreon-Light';
       font-size: 17px;
       color: rgb(44, 44, 44);
+      margin-top: 5px;
+      //   height: 20px;
+      //   overflow: hidden;
   }
 
 .card-footer-btn {
@@ -2451,28 +2488,20 @@ a:link {
       overflow: hidden;
   }
 
-@media (max-width: 600px) {
-      .card-entry-container {
-          -ms-flex-wrap: wrap;
-              flex-wrap: wrap;
-          -webkit-box-pack: center;
-              -ms-flex-pack: center;
-                  justify-content: center;
-      }
+.card-horizontal-line {
+      visibility: hidden;
+      width: 100%;
   }
 
-@media (max-width: 600px) {
-      .card-entry-text {
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -ms-flex-wrap: wrap;
-              flex-wrap: wrap;
-          -webkit-box-pack: justify;
-              -ms-flex-pack: justify;
-                  justify-content: space-between;
-      }
+@media (max-width: 500px) {
+
+.card-horizontal-line {
+          visibility: visible;
+          height: 1px;
+          border: 0;
+          border-top: 1px solid #ccc
   }
+    }
 
 @media (max-width:500px) {
     .category-heading {

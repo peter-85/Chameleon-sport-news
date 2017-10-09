@@ -8,7 +8,7 @@
     <div class="row">
 
         <!-- Blog Entries Column -->
-        <div class="col-md-10 col-lg-8 col-md-offset-1">
+        <div class="col-md-10 col-lg-9 col-md-offset-1">
 
             <h2 class="category-heading">{{result.[0].category}}
                 <small>{{result.length}} articles</small>
@@ -17,7 +17,7 @@
             <!-- Blog Post -->
             {{#result}}
             <div class="card-entry-container ">
-                <img class="card-img-top img-thumbnail img-responsive" src="{{image-small}}" alt="Card image cap">
+                <img class="card-img-top img-thumbnail img-responsive" src="{{image-square}}" alt="Card image cap">
                 <div class="card-entry-text">
                     <h4 class="card-title">{{title}}</h4>
                     <p class="card-text">{{summary}}</p>
@@ -25,6 +25,7 @@
                         Posted on {{createdAt}}
                     </div>
                     <a href="#/{{collection}}/{{id}}" class="btn btn-info card-footer-btn">Read More</a>
+                    <hr class="card-horizontal-line">
                 </div>
             </div>
             {{/result}}
