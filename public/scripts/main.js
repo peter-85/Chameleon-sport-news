@@ -3,8 +3,7 @@ import { mobileMenu } from 'mobileMenu';
 import { modal } from 'modal';
 
 
-$('body').ready(function() {
+$(document).ready(function() {
     router.start();
-    $(".preloading-icon").fadeOut("slow");
-
+    $('.preloading-icon').fadeOut('slow');
 });

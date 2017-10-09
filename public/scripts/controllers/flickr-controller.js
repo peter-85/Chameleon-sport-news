@@ -10,11 +10,11 @@ class FlickrController {
             $('button').removeClass('flickr__button--selected');
             $(this).addClass('flickr__button--selected');
 
-            let flickrApi = 'https://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?'
-            let opts = {
+            const flickrApi = 'https://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?'
+            const opts = {
                 tags: $(this).text(),
-                format: 'json'
-            }
+                format: 'json',
+            };
 
             function getPhotos() {
                 return new Promise((resolve, reject) => {
@@ -27,7 +27,6 @@ class FlickrController {
             getPhotos().then((photos) => {
                 templateHandler.setTemplate('flickr-feeder', '#content', photos);
             });
-
         });
     }
 }

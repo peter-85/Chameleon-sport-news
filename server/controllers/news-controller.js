@@ -1,13 +1,12 @@
-const { MongoClient, ObjectId } = require('mongodb');
-
+const { MongoClient } = require('mongodb');
 const mlabUrl = 'mongodb://peter_85:fce13382@ds040637.mlab.com:40637/chameleon-final-project-telerik';
 
-const _ = require("lodash");
+const _ = require('lodash');
 
 module.exports = (db) => {
     db.defaults({
             news: [],
-            blog: []
+            blog: [],
         })
         .value();
 
@@ -29,37 +28,28 @@ module.exports = (db) => {
         const news = getNewsFromDB();
 
         res.send({
-            result: news
+            result: news,
         });
-    };
-
-
-
-    // function getLatestSportNews(req, res) {
-    //     const news = getNewsFromDB()['latestSportNews'];
-    //     res.send({
-    //         result: news
-    //     });
-    // };
+    }
 
     function getRecentPosts(req, res) {
         const posts = getNewsFromDB()['recentPosts'];
         res.send({
-            result: posts
+            result: posts,
         });
-    };
+    }
 
     function getRecentFromBlog(req, res) {
         const posts = getPostsBlogFromDB().find({ id: 1 });
         res.send({
-            result: posts
+            result: posts,
         });
     }
 
     function getMedia(req, res) {
         const media = getMediaFromDB();
         res.send({
-            result: media
+            result: media,
         });
     }
 
@@ -72,7 +62,7 @@ module.exports = (db) => {
             db.collection('tennisNews').find().toArray().then((tennisNews) => {
                 console.log(tennisNews);
                 res.send({
-                    result: tennisNews
+                    result: tennisNews,
                 });
             }, (err) => {
                 console.log(err);
@@ -92,7 +82,7 @@ module.exports = (db) => {
             db.collection('tennisNews').findOne({ id: id }).then((tennisNews) => {
                 console.log(tennisNews);
                 res.send({
-                    article: tennisNews
+                    article: tennisNews,
                 });
             }, (err) => {
                 console.log(err);
@@ -105,20 +95,20 @@ module.exports = (db) => {
         MongoClient.connect(mlabUrl, (err, db) => {
             const comment = req.body.message;
             const id = +req.params.id;
-            let date = new Date();
-            const currentDate = date.getDate() + "/" +
-                (date.getMonth() + 1) + "/" +
+            const date = new Date();
+            const currentDate = date.getDate() + '/' +
+                (date.getMonth() + 1) + '/' +
                 date.getFullYear();
             const data = {
                 name: req.body.name,
                 email: req.body.email,
                 message: req.body.message,
-                date: currentDate
-            }
+                date: currentDate,
+            };
             db.collection('tennisNews').update({ id: id }, {
                 $push: {
-                    comments: data
-                }
+                    comments: data,
+                },
             });
         });
     }
@@ -130,9 +120,8 @@ module.exports = (db) => {
             }
 
             db.collection('latestSportNews').find().toArray().then((latestSportNews) => {
-                // console.log(tennisNews);
                 res.send({
-                    result: latestSportNews
+                    result: latestSportNews,
                 });
             }, (err) => {
                 console.log(err);
@@ -151,7 +140,7 @@ module.exports = (db) => {
             db.collection('latestSportNews').findOne({ id: id }).then((sportNews) => {
                 console.log(sportNews);
                 res.send({
-                    article: sportNews
+                    article: sportNews,
                 });
             }, (err) => {
                 console.log(err);
@@ -164,25 +153,23 @@ module.exports = (db) => {
         MongoClient.connect(mlabUrl, (err, db) => {
             const comment = req.body.message;
             const id = +req.params.id;
-            let date = new Date();
-            const currentDate = date.getDate() + "/" +
-                (date.getMonth() + 1) + "/" +
+            const date = new Date();
+            const currentDate = date.getDate() + '/' +
+                (date.getMonth() + 1) + '/' +
                 date.getFullYear();
             const data = {
                 name: req.body.name,
                 email: req.body.email,
                 message: req.body.message,
-                date: currentDate
-            }
+                date: currentDate,
+            };
             db.collection('latestSportNews').update({ id: id }, {
                 $push: {
-                    comments: data
-                }
+                    comments: data,
+                },
             });
         });
     }
-
-
 
     return {
         getNews,
@@ -194,6 +181,6 @@ module.exports = (db) => {
         postTennisComment,
         getLatestSportNews,
         getDetailSportNews,
-        postSportComment
+        postSportComment,
     };
 };

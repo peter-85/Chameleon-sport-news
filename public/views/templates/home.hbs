@@ -1,6 +1,6 @@
 <header class="secondary-header">
     <nav class="secondary-header__nav">
-        <li><a href="#" class="first-el">Home</a></li>
+        <li><a href="#/home" class="first-el">Home</a></li>
         <li><a href="#/tennisNews">Tennis</a></li>
         <li><a href="#/latestSportNews">Sport news</a></li>
         <li><a class="open-modal" href="#">Contact</a></li>
@@ -97,6 +97,7 @@
                 </a>
             </div>
             <p class="preview__summary">{{summary}}</p>
+            <a href="#/latestSportNews/{{id}}"><button class="preview__button btn btn-info btn-xs">Read more</button></a>
         </article>
         {{/latestSportNews.result}}
     </div>

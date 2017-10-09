@@ -51,23 +51,26 @@
         border: 1px solid #f0f0f0;
         border-right-color: #d1d1d1;
         border-bottom-color: #d1d1d1;
+        @media(max-width: 319px) {
+            width: 150px;
+        }
         @mixin atSmall {
             position: relative;
             border: none;
             display: flex;
             flex-wrap: wrap;
-            justify-content: center;
+            justify-content: flex-start;
         }
         @mixin atMedium {
             display: flex;
-            justify-content: center;
+            justify-content: flex-start;
             flex-wrap: wrap;
             position: relative;
             border: none;
         }
         @mixin atLarge {
             display: flex;
-            justify-content: center;
+            justify-content: flex-start;
             flex-wrap: wrap;
             margin-right: 18px;
             padding-bottom: 0;

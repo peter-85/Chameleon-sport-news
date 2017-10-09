@@ -3,7 +3,7 @@ const HANDLERS_PATH = './views/templates/';
 class TemplateHandler {
 
     getTemplate(templateName) {
-        let templatePath = `${HANDLERS_PATH}${templateName}.hbs`;
+        const templatePath = `${HANDLERS_PATH}${templateName}.hbs`;
         console.log(templatePath);
         return new Promise((resolve, reject) => {
             $.get(templatePath)
@@ -14,11 +14,10 @@ class TemplateHandler {
 
     setTemplate(templateName, targetSelector, dataObject) {
         return this.getTemplate(templateName)
-            .then(template => {
-
-                let compiledTemplate = Handlebars.compile(template);
-                let templateHtml = compiledTemplate(dataObject);
-                let $wrappedTemplate = $('<div/>');
+            .then((template) => {
+                const compiledTemplate = Handlebars.compile(template);
+                const templateHtml = compiledTemplate(dataObject);
+                const $wrappedTemplate = $('<div/>');
                 $wrappedTemplate.html(templateHtml);
                 $(targetSelector).html($wrappedTemplate.html());
 

@@ -32,5 +32,5 @@ class Modal {
     }
 }
 
-let modal = new Modal();
+const modal = new Modal();
 export { modal };

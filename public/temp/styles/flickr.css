@@ -40,6 +40,14 @@
     .flickr__photos li {
             margin: 0 10px 25px 10px;
         }
+    .flickr__photo {
+        padding-right: 50px;
+        padding-left: 50px;
+        display: inline-block;
+    }
+    .flickr__photo--is-hidden {
+            display: none;
+        }
 
 @media (max-width: 600px) {
     .flickr__photos {

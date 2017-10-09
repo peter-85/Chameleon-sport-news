@@ -16,5 +16,5 @@ class MobileMenu {
     }
 }
 
-let mobileMenu = new MobileMenu();
+const mobileMenu = new MobileMenu();
 export { mobileMenu };

@@ -1,6 +1,7 @@
 .carousel {
     max-width: 960px;
     max-height: 500px;
+    z-index: 5;
     @mixin atSmall {
         width: 100%;
         padding-top: 65px;

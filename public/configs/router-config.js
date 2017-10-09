@@ -6,12 +6,11 @@ import { newsController } from 'newsController';
 class Router {
 
     start() {
-        let sammy = Sammy(function() {
-
+        const sammy = Sammy(function() {
             this.get('#/', (sammy) => sammy.redirect('#/home'));
             this.get('#/home', newsController.getAll);
 
-            //News
+            //  News
             this.get('#/tennisNews', newsController.getTennisNews);
             this.get('#/tennisNews/:id', (sammy) => newsController.getTennisArticle(sammy));
             this.post('#/tennisNews/comments', (sammy) => newsController.postTennisComment(sammy));
@@ -21,7 +20,7 @@ class Router {
             this.post('#/latestSportNews/comments', (sammy) => newsController.postSportComment(sammy));
 
 
-            // Other
+            //  Other
             this.get('#/flickr-feeder', flickrController.getPhotos);
         });
 

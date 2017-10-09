@@ -15,6 +15,7 @@
         "@types/lowdb": "^0.15.0",
         "@types/mongodb": "^2.2.12",
         "body-parser": "^1.18.2",
+        "eslint-config-google": "^0.9.1",
         "express": "^4.15.4",
         "lowdb": "^1.0.0",
         "mongodb": "^2.2.31",
@@ -22,6 +23,8 @@
     },
     "devDependencies": {
         "@types/lodash": "^4.14.76",
+        "babel-eslint": "^7.2.3",
+        "eslint": "^3.19.0",
         "lodash": "^4.17.4"
     }
 }

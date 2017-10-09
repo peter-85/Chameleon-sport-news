@@ -36,15 +36,18 @@
             margin-right: 70px;
         }
     }
+    &:last-child {
+        @mixin atLarge {
+            margin-bottom: 25px;
+        }
+    }
     &__title {
         font-size: 20px;
         overflow: hidden;
         font-family: 'Kreon-Light';
+        padding-bottom: 5px;
         @mixin atSmall {
             margin-top: 10px;
-        }
-        @mixin atLarge {
-            padding-bottom: 5px;
         }
         @mixin atXLarge {
             height: 45px;
@@ -62,6 +65,7 @@
             font-size: 12px;
             height: 147px;
             overflow: hidden;
+            margin-bottom: 5px;
         }
         @mixin atMedium {
             height: 158px;
@@ -119,5 +123,17 @@
         height: 40px;
         background: url("images/preview-hover-icon.png");
         visibility: hidden;
+    }
+    &__button {
+        display: none;
+        @mixin atSmall {
+            display: block;
+            font-family: 'Kreon-Light';
+            font-size: 15px;
+            font-weight: 550;
+            z-index: 2;
+            width: 100%;
+            margin-bottom: 10px;
+        }
     }
 }

@@ -29,6 +29,14 @@
             margin: 0 10px 25px 10px;
         }
     }
+    &__photo {
+        padding-right: 50px;
+        padding-left: 50px;
+        display: inline-block;
+        &--is-hidden {
+            display: none;
+        }
+    }
 }
 
 @media (max-width: 600px) {

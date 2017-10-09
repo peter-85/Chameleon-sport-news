@@ -5,11 +5,11 @@ class Requester {
             $.ajax({
                 url,
                 data: opts,
-                method: "GET",
-                contentType: "application/json",
+                method: 'GET',
+                contentType: 'application/json',
                 success: (response) => {
                     resolve(response);
-                }
+                },
             });
         });
     }

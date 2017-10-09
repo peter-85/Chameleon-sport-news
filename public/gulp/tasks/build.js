@@ -5,7 +5,8 @@ const usemin = require('gulp-usemin');
 const rev = require('gulp-rev');
 const cssnano = require('gulp-cssnano');
 
-gulp.task('deleteDistFolder', function() { // when building everytime first delete old project and then write the new one
+// when building everytime first delete old project and then write the new one
+gulp.task('deleteDistFolder', function() {
     return del('./dist');
 });
 
@@ -14,7 +15,7 @@ gulp.task('optimizeImages', ['deleteDistFolder'], () => {
         .pipe(imagemin({
             progressive: true,
             interlaced: true,
-            multipass: true
+            multipass: true,
         }))
         .pipe(gulp.dest('./dist/images'));
 });

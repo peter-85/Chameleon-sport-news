@@ -93,6 +93,7 @@
         margin-top: 59px;
         @mixin atSmall {
             opacity: 0;
+            // display: none;
             transform: scale(1.2);
             transition: all .4s ease-out;
             z-index: -10;
@@ -113,6 +114,7 @@
         }
         &&--is-visible {
             opacity: 1;
+            // display: flex;
             z-index: 10000;
             transform: scale(1);
             background-color: white;
@@ -136,10 +138,6 @@
             @mixin atLarge {
                 margin-left: 15px;
             }
-        }
-        .first-el {
-            // color: rgb(67, 124, 139);
-            // font-weight: 600;
         }
         &:last-child {
             color: rgb(67, 124, 139);
@@ -188,7 +186,7 @@
         border: none;
         padding-left: 10px;
         box-shadow: 1px -1px 3px rgba(0, 0, 0, 0.35) inset;
-        margin-left: 14px;
+        margin-left: 8px;
     }
     &__search-btn {
         position: absolute;

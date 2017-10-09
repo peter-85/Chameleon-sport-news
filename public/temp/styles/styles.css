@@ -450,18 +450,17 @@ template {
   display: none;
 }
 
-/*start Preloading spinner*/
-
-.no-js #loader {
+/*.no-js #loader {
     display: none;
 }
-
 .js #loader {
     display: block;
     position: absolute;
     left: 100px;
     top: 0;
-}
+}*/
+
+/*start Preloading spinner*/
 
 .preloading-icon {
     position: fixed;
@@ -504,7 +503,7 @@ template {
 
 body {
     margin: 0;
-    border: 1px solid purple;
+    // border: 2px solid purple;
     background-image: url('../../images/background.png');
 }
 
@@ -727,6 +726,7 @@ a:link {
 
 .site-header__nav {
             opacity: 0;
+            // display: none;
             -webkit-transform: scale(1.2);
                     transform: scale(1.2);
             -webkit-transition: all .4s ease-out;
@@ -761,6 +761,7 @@ a:link {
 
 .site-header__nav.site-header__nav--is-visible {
             opacity: 1;
+            // display: flex;
             z-index: 10000;
             -webkit-transform: scale(1);
                     transform: scale(1);
@@ -799,11 +800,6 @@ a:link {
                 margin-left: 15px
         }
     }
-
-.site-header__nav .first-el {
-            // color: rgb(67, 124, 139);
-            // font-weight: 600;
-        }
 
 .site-header__nav:last-child {
             color: rgb(67, 124, 139);
@@ -866,7 +862,7 @@ a:link {
         padding-left: 10px;
         -webkit-box-shadow: 1px -1px 3px rgba(0, 0, 0, 0.35) inset;
                 box-shadow: 1px -1px 3px rgba(0, 0, 0, 0.35) inset;
-        margin-left: 14px;
+        margin-left: 8px;
     }
 
 .site-header__search-btn {
@@ -1201,6 +1197,7 @@ a:link {
 .carousel {
     max-width: 960px;
     max-height: 500px;
+    z-index: 5;
 }
 
 @media (max-width: 500px) {
@@ -1685,23 +1682,24 @@ a:link {
     }
     }
 
+@media (max-width: 1050px) and (min-width: 801px) {
+
+.preview:last-child {
+            margin-bottom: 25px
+    }
+    }
+
 .preview__title {
         font-size: 20px;
         overflow: hidden;
         font-family: 'Kreon-Light';
+        padding-bottom: 5px;
     }
 
 @media (max-width: 500px) {
 
 .preview__title {
             margin-top: 10px
-    }
-    }
-
-@media (max-width: 1050px) and (min-width: 801px) {
-
-.preview__title {
-            padding-bottom: 5px
     }
     }
 
@@ -1727,7 +1725,8 @@ a:link {
             padding: 5px;
             font-size: 12px;
             height: 147px;
-            overflow: hidden
+            overflow: hidden;
+            margin-bottom: 5px
     }
     }
 
@@ -1820,6 +1819,23 @@ a:link {
         visibility: hidden;
     }
 
+.preview__button {
+        display: none;
+    }
+
+@media (max-width: 500px) {
+
+.preview__button {
+            display: block;
+            font-family: 'Kreon-Light';
+            font-size: 15px;
+            font-weight: 550;
+            z-index: 2;
+            width: 100%;
+            margin-bottom: 10px
+    }
+    }
+
 .blog-media {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1904,6 +1920,13 @@ a:link {
         border-bottom-color: #d1d1d1;
     }
 
+@media(max-width: 319px) {
+
+.media__bar {
+            width: 150px
+    }
+        }
+
 @media (max-width: 500px) {
 
 .media__bar {
@@ -1914,9 +1937,9 @@ a:link {
             display: flex;
             -ms-flex-wrap: wrap;
                 flex-wrap: wrap;
-            -webkit-box-pack: center;
-                -ms-flex-pack: center;
-                    justify-content: center
+            -webkit-box-pack: start;
+                -ms-flex-pack: start;
+                    justify-content: flex-start
     }
     }
 
@@ -1926,9 +1949,9 @@ a:link {
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
-            -webkit-box-pack: center;
-                -ms-flex-pack: center;
-                    justify-content: center;
+            -webkit-box-pack: start;
+                -ms-flex-pack: start;
+                    justify-content: flex-start;
             -ms-flex-wrap: wrap;
                 flex-wrap: wrap;
             position: relative;
@@ -1942,9 +1965,9 @@ a:link {
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
-            -webkit-box-pack: center;
-                -ms-flex-pack: center;
-                    justify-content: center;
+            -webkit-box-pack: start;
+                -ms-flex-pack: start;
+                    justify-content: flex-start;
             -ms-flex-wrap: wrap;
                 flex-wrap: wrap;
             margin-right: 18px;
@@ -2402,7 +2425,7 @@ a:link {
 
 .top-header-currentPage span {
     color: rgb(89, 89, 89);
-    font-weight: 580
+    font-weight: 500;
 }
 
 .card-entry-container {
