@@ -8,3 +8,4 @@
 @import "./modules/_profile.scss";
 @import "./modules/pages/home";
 @import "./modules/pages/article";
+@import "./modules/pages/category";

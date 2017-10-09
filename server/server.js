@@ -27,17 +27,23 @@ app.get('/', (req, res) => {
 let newsController = require('./controllers/news-controller')(db);
 
 app.get('/api/news', newsController.getNews);
+
 app.get('/api/news/tennisnews', newsController.getTennisNews);
 app.get('/api/news/tennisnews/:id', (req, res) => {
     return newsController.getDetailTennisNews(req, res);
 });
 app.post('/api/news/tennisnews/:id', (req, res) => {
-    return newsController.postComment(req, res);
+    return newsController.postTennisComment(req, res);
 });
+
 app.get('/api/news/latestSportNews', newsController.getLatestSportNews);
 app.get('/api/news/latestSportNews/:id', (req, res) => {
     return newsController.getDetailSportNews(req, res);
 });
+app.post('/api/news/latestSportNews/:id', (req, res) => {
+    return newsController.postSportComment(req, res);
+});
+
 app.get('/api/getFromBlog', newsController.getRecentFromBlog);
 app.get('/api/news/recentPosts', newsController.getRecentPosts);
 app.get('/api/news/media', newsController.getMedia);

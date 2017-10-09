@@ -1,0 +1,11 @@
+@import "../_cards.scss";
+@media (max-width:500px) {
+    .category-heading {
+        padding-top: 50px;
+    }
+}
+
+.category-heading {
+    font-size: responsive 16px 30px;
+    font-range: 250px 1200px;
+}

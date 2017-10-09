@@ -19,19 +19,19 @@ class NewsController {
         });
     }
 
-    // getLatestSportNews() {
-    //     return dataService.latestSportNews();
-    // }
 
-    // getLatestSportNews() {
-    //     dataService.tennisNews().then((json) => {
-    //         templateHandler.setTemplate('tennis-news', '#content', json)
-    //     });
-    // }
 
-    // getTennisArticle() {
-    //     return dataService.tennisArticle();
-    // }
+    getTennisNews() {
+        dataService.tennisNews().then((tennisNews) => {
+            templateHandler.setTemplate('category', '#content', tennisNews)
+        });
+    }
+
+    getLatestSportNews() {
+        dataService.latestSportNews().then((sportNews) => {
+            templateHandler.setTemplate('category', '#content', sportNews)
+        });
+    }
 
     getAll() {
         let promises = [
@@ -55,13 +55,31 @@ class NewsController {
             });
         })
     }
-    postComment(sammy) {
+    postTennisComment(sammy) {
 
         let name = sammy.params.name;
         let email = sammy.params.email;
         let message = sammy.params.message;
         let postId = +window.location.href.split('tennisNews/')[1].split('/')[0],
             url = `http://localhost:3000/api/news/tennisnews/${postId}`;
+
+        const data = {
+            name,
+            email,
+            message
+        }
+
+        $.post(url, data)
+        location.reload(true);
+    };
+
+    postSportComment(sammy) {
+
+        let name = sammy.params.name;
+        let email = sammy.params.email;
+        let message = sammy.params.message;
+        let postId = +window.location.href.split('latestSportNews/')[1].split('/')[0],
+            url = `http://localhost:3000/api/news/latestSportNews/${postId}`;
 
         const data = {
             name,

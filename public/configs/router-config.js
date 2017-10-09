@@ -7,31 +7,22 @@ class Router {
 
     start() {
         let sammy = Sammy(function() {
-            // this.before({}, () => {
-            //     headerController.initialize();
-            // });
 
             this.get('#/', (sammy) => sammy.redirect('#/home'));
             this.get('#/home', newsController.getAll);
 
-            //Account
+            //News
             this.get('#/tennisNews', newsController.getTennisNews);
             this.get('#/tennisNews/:id', (sammy) => newsController.getTennisArticle(sammy));
-            this.post('#/tennisNews/comments', (sammy) => newsController.postComment(sammy));
+            this.post('#/tennisNews/comments', (sammy) => newsController.postTennisComment(sammy));
 
+            this.get('#/latestSportNews', newsController.getLatestSportNews);
             this.get('#/latestSportNews/:id', (sammy) => newsController.getSportArticle(sammy));
-            // this.post('#/account/sign-in', accountController.signIn);
-            // this.post('#/account/sign-up', accountController.signUp);
-
-            // this.post('#/account/add-to-watchlist', accountController.addToWatchlist);
+            this.post('#/latestSportNews/comments', (sammy) => newsController.postSportComment(sammy));
 
 
-
-            // // Other
-            // this.get('#/about', () => htmlHandler.setHtml('about', '#content'));
+            // Other
             this.get('#/flickr-feeder', flickrController.getPhotos);
-            // this.get('#/tennisNews/1', templateHandler.setTemplate('article', '#content'));
-            // this.post('#/contact', footerController.contact);
         });
 
         $(function() {

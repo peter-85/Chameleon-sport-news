@@ -1,14 +1,10 @@
 <header class="secondary-header">
     <nav class="secondary-header__nav">
         <li><a href="#" class="first-el">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">Page Templates</a></li>
-        <li><a href="#">Shortcodes</a></li>
-        <li><a href="#">Blog</a></li>
-        {{!--
-        <li><a href="#">Page Templates</a></li>--}}
-        <li><a href="#">Shortcodes</a></li>
+        <li><a href="#/tennisNews">Tennis</a></li>
+        <li><a href="#/latestSportNews">Sport news</a></li>
+        <li><a class="open-modal" href="#">Contact</a></li>
+        <li><a href="#/flickr-feeder">Photo Gallery</a></li>
         <li><a href="#">Blog</a></li>
     </nav>
 </header>
@@ -29,10 +25,10 @@
         {{#tennisNews.result}} {{#if @first}}
         <div class="item active">
             <a href="#/tennisNews/{{id}}">
-            <picture>              
+                <picture>
                     <source srcset={{image}} media="(min-width: 501px)" class="carousel-img">
                     <img src={{image-small}} alt="" class="carousel-img">
-            </picture>
+                </picture>
             </a>
             <!-- CArousel main window caption -->
             <div class="carousel-caption">
@@ -83,11 +79,12 @@
 
 
 <section id="main-content" class="group">
-    {{!--<div class="previews__title">
-    {{#latestSportNews.result}}
-            <h2 class="preview__title">{{title}}</h2>
-    {{/latestSportNews.result}}   
-    </div>     --}}
+    {{!--
+    <div class="previews__title">
+        {{#latestSportNews.result}}
+        <h2 class="preview__title">{{title}}</h2>
+        {{/latestSportNews.result}}
+    </div> --}}
     <div class="previews">
 
         {{#latestSportNews.result}}

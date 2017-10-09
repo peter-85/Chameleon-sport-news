@@ -1,0 +1,56 @@
+  .card-entry-container {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      background-color: rgb(253, 253, 253);
+      border: 1px solid rgb(240, 240, 240);
+  }
+  
+  .card-img-top {
+      max-width: 200px;
+      max-height: 200px;
+      margin-top: auto;
+      margin-bottom: auto
+  }
+  
+  .card-entry-text {
+      margin: 10px;
+      font-family: 'Droid-Sans';
+      font-size: 12px;
+      color: rgb(146, 146, 146);
+  }
+  
+  .card-entry-text h4 {
+      font-family: 'Kreon-Light';
+      font-size: 17px;
+      color: rgb(44, 44, 44);
+  }
+  
+  .card-footer-btn {
+      margin-top: 5px;
+      font-family: 'Kreon-Light';
+      font-size: 12px;
+      color: rgb(44, 44, 44);
+      font-weight: 700;
+  }
+  
+  .card-text {
+      text-align: justify;
+      height: 101px;
+      overflow: hidden;
+  }
+  
+  @media (max-width: 600px) {
+      .card-entry-container {
+          flex-wrap: wrap;
+          justify-content: center;
+      }
+  }
+  
+  @media (max-width: 600px) {
+      .card-entry-text {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+      }
+  }

@@ -1,0 +1,47 @@
+{{!--{{#result}}
+<h2>{{title}}</h2>
+<p>{{summary}}</p>
+{{/result}}--}}
+
+<div class="container">
+
+    <div class="row">
+
+        <!-- Blog Entries Column -->
+        <div class="col-md-10 col-lg-8 col-md-offset-1">
+
+            <h2 class="category-heading">{{result.[0].category}}
+                <small>{{result.length}} articles</small>
+            </h2>
+
+            <!-- Blog Post -->
+            {{#result}}
+            <div class="card-entry-container ">
+                <img class="card-img-top img-thumbnail img-responsive" src="{{image-small}}" alt="Card image cap">
+                <div class="card-entry-text">
+                    <h4 class="card-title">{{title}}</h4>
+                    <p class="card-text">{{summary}}</p>
+                    <div class="card-footer text-muted">
+                        Posted on {{createdAt}}
+                    </div>
+                    <a href="#/{{collection}}/{{id}}" class="btn btn-info card-footer-btn">Read More</a>
+                </div>
+            </div>
+            {{/result}}
+
+            <!-- Pagination -->
+            <ul class="pagination justify-content-center mb-4">
+                <li class="page-item">
+                    <a class="page-link" href="#">&larr; Older</a>
+                </li>
+                <li class="page-item disabled">
+                    <a class="page-link" href="#">Newer &rarr;</a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+    <!-- /.row -->
+
+</div>
+<!-- /.container -->

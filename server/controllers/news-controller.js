@@ -101,7 +101,7 @@ module.exports = (db) => {
         });
     }
 
-    function postComment(req, res) {
+    function postTennisComment(req, res) {
         MongoClient.connect(mlabUrl, (err, db) => {
             const comment = req.body.message;
             const id = +req.params.id;
@@ -160,6 +160,28 @@ module.exports = (db) => {
         });
     }
 
+    function postSportComment(req, res) {
+        MongoClient.connect(mlabUrl, (err, db) => {
+            const comment = req.body.message;
+            const id = +req.params.id;
+            let date = new Date();
+            const currentDate = date.getDate() + "/" +
+                (date.getMonth() + 1) + "/" +
+                date.getFullYear();
+            const data = {
+                name: req.body.name,
+                email: req.body.email,
+                message: req.body.message,
+                date: currentDate
+            }
+            db.collection('latestSportNews').update({ id: id }, {
+                $push: {
+                    comments: data
+                }
+            });
+        });
+    }
+
 
 
     return {
@@ -169,8 +191,9 @@ module.exports = (db) => {
         getMedia,
         getTennisNews,
         getDetailTennisNews,
-        postComment,
+        postTennisComment,
         getLatestSportNews,
-        getDetailSportNews
+        getDetailSportNews,
+        postSportComment
     };
 };
