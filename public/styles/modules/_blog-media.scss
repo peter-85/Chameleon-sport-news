@@ -117,6 +117,15 @@
             display: block;
         }
     }
+    &__img {
+        width: 100%;
+        &--fullSize {
+            width: 200px;
+            transition: all .4s ease-in;
+            z-index: 10;
+            opacity: 1;
+        }
+    }
     &__hover-icon {
         position: absolute;
         top: 50%;

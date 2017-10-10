@@ -34,62 +34,59 @@ class NewsController {
     }
 
     getAll() {
-        let promises = [
+        const promises = [
             dataService.tennisNews(),
             dataService.latestSportNews(),
             dataService.recentPosts(),
             dataService.media(),
         ];
-        Promise.all(promises).then(values => {
-
-            let tennisNews = values[0];
-            let latestSportNews = values[1];
-            let recentPosts = values[2];
-            let media = values[3]
+        Promise.all(promises).then((values) => {
+            const tennisNews = values[0];
+            const latestSportNews = values[1];
+            const recentPosts = values[2];
+            const media = values[3];
 
             templateHandler.setTemplate('home', '#content', {
                 tennisNews,
                 latestSportNews,
                 recentPosts,
-                media
+                media,
             });
-        })
+        });
     }
     postTennisComment(sammy) {
-
-        let name = sammy.params.name;
-        let email = sammy.params.email;
-        let message = sammy.params.message;
-        let postId = +window.location.href.split('tennisNews/')[1].split('/')[0],
-            url = `http://localhost:3000/api/news/tennisnews/${postId}`;
+        const name = sammy.params.name;
+        const email = sammy.params.email;
+        const message = sammy.params.message;
+        const postId = +window.location.href.split('tennisNews/')[1].split('/')[0];
+        const url = `http://localhost:3000/api/news/tennisnews/${postId}`;
 
         const data = {
             name,
             email,
-            message
-        }
+            message,
+        };
 
-        $.post(url, data)
+        $.post(url, data);
         location.reload(true);
-    };
+    }
 
     postSportComment(sammy) {
-
-        let name = sammy.params.name;
-        let email = sammy.params.email;
-        let message = sammy.params.message;
-        let postId = +window.location.href.split('latestSportNews/')[1].split('/')[0],
-            url = `http://localhost:3000/api/news/latestSportNews/${postId}`;
+        const name = sammy.params.name;
+        const email = sammy.params.email;
+        const message = sammy.params.message;
+        const postId = +window.location.href.split('latestSportNews/')[1].split('/')[0];
+        const url = `http://localhost:3000/api/news/latestSportNews/${postId}`;
 
         const data = {
             name,
             email,
-            message
-        }
+            message,
+        };
 
-        $.post(url, data)
+        $.post(url, data);
         location.reload(true);
-    };
+    }
 }
 
 

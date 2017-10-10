@@ -79,12 +79,6 @@
 
 
 <section id="main-content" class="group">
-    {{!--
-    <div class="previews__title">
-        {{#latestSportNews.result}}
-        <h2 class="preview__title">{{title}}</h2>
-        {{/latestSportNews.result}}
-    </div> --}}
     <div class="previews">
 
         {{#latestSportNews.result}}
@@ -106,7 +100,7 @@
             <h4 class="blog-p__title">From The Blog</h4>
             <ul class="blog-p__posts">
                 {{#recentPosts.result}}
-                <li><a href="{{key}}">{{title}}</a></li>
+                <li><a href="#/">{{title}}</a></li>
                 {{/recentPosts.result}}
             </ul>
         </aside>
@@ -131,3 +125,9 @@
         </aside>
     </div>
 </section>
+
+<script>
+    /*$('.media__img').on('click', function (e) {
+        $(this).toggleClass('media__img--fullSize');
+    });*/
+</script>

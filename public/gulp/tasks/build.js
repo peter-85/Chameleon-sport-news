@@ -29,4 +29,4 @@ gulp.task('usemin', ['deleteDistFolder', 'styles'], function() {
         .pipe(gulp.dest('./dist'));
 });
 
-gulp.task('build', ['deleteDistFolder', 'optimizeImages', 'usemin']);
+gulp.task('build', ['deleteDistFolder', 'optimizeImages', 'usemin', 'minify']);

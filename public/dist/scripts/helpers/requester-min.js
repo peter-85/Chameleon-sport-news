@@ -1,0 +1,1 @@
+class Requester{getJSON(e,t){return new Promise((s,r)=>{$.ajax({url:e,data:t,method:"GET",contentType:"application/json",success:e=>{s(e)}})})}}const requester=new Requester;export{requester};

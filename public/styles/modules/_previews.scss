@@ -40,6 +40,9 @@
         @mixin atLarge {
             margin-bottom: 25px;
         }
+        @mixin atMedium {
+            margin-bottom: 25px;
+        }
     }
     &__title {
         font-size: 20px;
@@ -133,6 +136,16 @@
             font-weight: 550;
             z-index: 2;
             width: 100%;
+            margin-bottom: 10px;
+        }
+        @mixin atMedium {
+            display: block;
+            float: right;
+            font-family: 'Kreon-Light';
+            font-size: 15px;
+            font-weight: 550;
+            z-index: 2;
+            width: 50%;
             margin-bottom: 10px;
         }
     }
